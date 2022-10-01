@@ -5,7 +5,7 @@ import adminDashboard from '../../assets/img/adminDashboard.jpg'
 import rickandmorty from '../../assets/img/rickandmorty.jpg'
 import Posit from '../../assets/img/Posit.jpg'
 import ClimaApp from '../../assets/img/ClimaApp.jpg'
-import Sunshine from '../../assets/img/Sunshine.jpg'
+import Sunshine from '../../assets/img/sunshine.jpg'
 import quotes from'../../assets/img/quotes.jpg'
 
 
