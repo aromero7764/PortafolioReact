@@ -1,13 +1,18 @@
 import React from 'react';
 import phone from'../../assets/img/phone 3.svg'
 import mail from'../../assets/img/mail 4.svg'
+import { useTranslation } from 'react-i18next';
+
 
 
 const Footer = () => {
+    
+    const [t, i18n] = useTranslation("global")
+    
     return (
         <footer>
             <section id="contacto" className="contact">
-                <h2 className="section-title subtitle">Contacto</h2>
+                <h2 className="section-title subtitle">{t ("Contacto")}</h2>
                 <div className="contac-container">
                     <article className="contac-method">
 
@@ -19,7 +24,7 @@ const Footer = () => {
                                 
                             </a>
                         </div>
-                            <p className="phone_text parrafo1">Número Celular</p>
+                            <p className="phone_text parrafo1">{t ("PhoneNumber")}</p>
                             <a className="phone_number parafo parrafo2" href="tel:+584142360529">+58 414 236 0529</a>
 
                     </article>
@@ -35,7 +40,7 @@ const Footer = () => {
                         <a className="phone_number parrafo2" href="mailto:aromero7764@gmail.com">aromero7764@gmail.com</a>
                     </article>
                 </div>
-                <p className="parrafo_amor">Hecho con <strong className="love">&#x2764;</strong> en Venezuela</p>
+                <p className="parrafo_amor">{t ("Madewhid")} <strong className="love">&#x2764;</strong> {t ("in")} Venezuela</p>
             </section>
         </footer>
     );

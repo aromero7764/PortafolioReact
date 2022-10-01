@@ -11,6 +11,7 @@
     --beige: #f9f5f2;
     --ligh: #cfb5ffc0;
     --bgviolet: #ece4fb ;
+    --bgcardskill:  #ffffff;
 
     /* Tipografía */
     --mainfont: 'Montserrat', sans-serif;
@@ -25,6 +26,8 @@
     --beige: #726962;
     --ligh: #56545ac0;
     --bgviolet: #5b595e ; 
+    --bgcardskill: #5b595e; 
+
 }
 
 
@@ -67,6 +70,15 @@ body {
    
   p {
        color: var(--black);  
+   }
+
+   h3{
+    color: var(--black);  
+   }
+
+   .has-background {
+    background-color: var(--bgcardskill);
+
    }
     
    /* Mobile First */

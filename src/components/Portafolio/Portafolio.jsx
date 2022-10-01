@@ -7,19 +7,23 @@ import Posit from '../../assets/img/Posit.jpg'
 import ClimaApp from '../../assets/img/ClimaApp.jpg'
 import Sunshine from '../../assets/img/sunshine.jpg'
 import quotes from'../../assets/img/quotes.jpg'
+import {useTranslation} from "react-i18next"
 
 
 
 const Portafolio = () => {
+
+    const [t, i18n] = useTranslation("global")
+
     return (
         <section id="portafolio" className="portafolio mainsection">
-            <h2 className="section-title subtitle">Portafolio</h2>
+            <h2 className="section-title subtitle">{t ("Portafolio")}</h2>
 
             <div className="portafolio_container">
 
-                <div className='box'>
+                <div className='box has-background'>
                 <h3 className="is-size-6"><span className='has-text-weight-bold'>Pokedex: </span><br />
-                Realizado en React JS con Redux, consumo de API y Bulma CSS</h3><br />
+                {t ("Pokedektext")}</h3><br />
                 
 
                 <div className="article container">
@@ -32,9 +36,9 @@ const Portafolio = () => {
                 </div>
                 </div>
 
-                <div className='box'>
+                <div className='box has-background'>
                 <h3 className="is-size-6"><span className='has-text-weight-bold'>Social Media Dashboard: </span><br />
-                Landing Page de una Social Media Dashboard, realizado en Vanilla Js sin Frameworks</h3><br />
+                {t ("SocialMedia")}</h3><br />
 
                 <div className="article container">
                     <article className="portafolio_articles rgb">
@@ -46,9 +50,9 @@ const Portafolio = () => {
                 </div>
                 </div>
 
-                <div className='box'>
+                <div className='box has-background'>
                 <h3 className="is-size-6"><span className='has-text-weight-bold'>Admin DashBoard:</span><br />
-                CRUD de usuarios, Realizado en React, consumo de API con axios</h3><br />
+                {t ("AdminDashBoard")}</h3><br />
 
                 <div className="article container">
                     <article className="portafolio_articles rgb">
@@ -59,9 +63,9 @@ const Portafolio = () => {
                 </div>
                 </div>
 
-                <div className='box'>
+                <div className='box has-background'>
                 <h3 className="is-size-6"><span className='has-text-weight-bold'>Quotes Generator:</span><br />
-                Generador Ramdom de citas celebres, realizado en React</h3><br />
+               {t ("QuotesGeneratos")}</h3><br />
                 <div className="article container">
                     <article className="portafolio_articles rgb">
                         <a href="https://remarkable-tartufo-6df274.netlify.app/" target="_blank">
@@ -71,9 +75,9 @@ const Portafolio = () => {
                 </div>
                 </div>
 
-                <div className='box'>
+                <div className='box has-background'>
                 <h3 className="is-size-6"><span className='has-text-weight-bold'>Rick and Morty App:</span><br />
-                Consumo de API Rick And Morty con axios, estilos con Bulma CSS </h3><br />
+               {t ("RickAndMorty")}</h3><br />
 
                 <div className="article container">
                     <article className="portafolio_articles rgb">
@@ -83,9 +87,9 @@ const Portafolio = () => {
                     </article>
                 </div>
             </div>
-            <div className='box'>
+            <div className='box has-background'>
                 <h3 className="is-size-6"><span className='has-text-weight-bold'>CRUD:</span><br />
-                Realizado en Svelte, aplicativo de Post It </h3><br />
+                {t ("postIt")}</h3><br />
                 <div className="article container">
                     <article className="portafolio_articles rgb">
                         <a href="https://profound-begonia-f76288.netlify.app/" target="_blank">
@@ -94,9 +98,9 @@ const Portafolio = () => {
                     </article>
                 </div>
             </div>
-            <div className='box'>
+            <div className='box has-background'>
                 <h3 className="is-size-6"><span className='has-text-weight-bold'>APP del Clima:</span><br />
-               Permite segun la ubicacion saber el clima en tiempo real </h3><br />
+               {t ("cliamateApp")} </h3><br />
                 <div className="article container">
                     <article className="portafolio_articles rgb">
                         <a href="https://serene-ganache-fdcfe0.netlify.app/" target="_blank">
@@ -107,9 +111,9 @@ const Portafolio = () => {
                 </div>
 
 
-                <div className='box'>
+                <div className='box has-background'>
                 <h3 className="is-size-6"><span className='has-text-weight-bold'>Sunshine Landing Page:</span><br />
-               Landing page ralizado con HTML y CSS puro </h3><br />
+               {t ("sunshinePage")} </h3><br />
                 <div className="article container">
                     <article className="portafolio_articles rgb">
                         <a href="https://roaring-jelly-81eb51.netlify.app/" target="_blank">

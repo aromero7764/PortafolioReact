@@ -26,9 +26,13 @@ const changeToogle = ()=> {
        document.body.classList.remove("dark-mode");
     } else {
         document.body.classList.add("dark-mode");
-    }
-    
+    }    
  
+}
+
+const changeLenguaje = (lenguajeSelect)=> {
+    i18n.changeLanguage(lenguajeSelect)
+    changeIsActive()
 }
 
 
@@ -68,10 +72,10 @@ const changeToogle = ()=> {
 
                     <div className="buttons is-small">
                             
-                            <a onClick={()=> i18n.changeLanguage(lenguaje)} className="button is-small is-light">
+                            <a onClick={()=> changeLenguaje(lenguaje)} className="button is-small is-light">
                             <img src={esFlag} alt="USaflags" />
                             </a>
-                            <a onClick={()=> i18n.changeLanguage("en")} className="button is-small is-light">
+                            <a onClick={()=> changeLenguaje("en")} className="button is-small is-light">
                                 <img src={enFlag} alt="EspFlag" />
                             </a>
                         </div>

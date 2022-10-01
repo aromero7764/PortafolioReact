@@ -5,6 +5,17 @@
     "Portafolio": "Portafolio",
     "Contacto": "Contacto",
     "Contactame": "Contáctame",
-    "TxtAboutMe": "Hola, me llamo Alberto Romero, vivo en Caracas, Venezuela, soy Licenciado en Comercio Internacional. He trabajado en diferentes áreas tales como, soporte técnico, electrónica, logística, distribución y almacenes. Sin embargo, desde mis inicios siempre me ha fascinado el diseño web y la programación. Actualmente, estoy en formación en Academlo como Desarrollador Web Full Stack."
+    "TxtAboutMe": "Hola, me llamo Alberto Romero, vivo en Caracas, Venezuela, soy Licenciado en Comercio Internacional. He trabajado en diferentes áreas tales como, soporte técnico, electrónica, logística, distribución y almacenes. Sin embargo, desde mis inicios siempre me ha fascinado el diseño web y la programación. Actualmente, estoy en formación en Academlo como Desarrollador Web Full Stack.",
+    "Pokedektext": "Realizado en React JS con Redux, consumo de API y Bulma CSS",
+    "SocialMedia": "Landing Page de una Social Media Dashboard, realizado en Vanilla Js sin Frameworks",
+    "AdminDashBoard": "CRUD de usuarios, Realizado en React, consumo de API con axios",
+    "QuotesGeneratos": "Generador Ramdom de citas celebres, realizado en React",
+    "RickAndMorty": "Consumo de API Rick And Morty con axios, estilos con Bulma CSS",
+    "postIt": "Realizado en Svelte, aplicativo de Post It",
+    "cliamateApp": "Permite segun la ubicacion saber el clima en tiempo real",
+    "sunshinePage": "Landing page ralizado con HTML y CSS puro",
+    "PhoneNumber": "Número Celular",
+    "Madewhid": "Hecho con",
+    "in": "en"
 
 }

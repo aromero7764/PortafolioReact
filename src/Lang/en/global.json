@@ -6,6 +6,17 @@
     "Portafolio": "Portafolio",
     "Contacto": "Contact",
     "Contactame": "Contact me",
-    "TxtAboutMe": "Hello, My name is Alberto Romero, I live in Caracas, Venezuela, I have a degree in International Commerce. I have worked in different areas such as technical support, electronics, logistics, distribution and warehouses. However, since my beginnings I have always been fascinated by web design and programming. Currently, I am in training at Academlo as a Full Stack Web Developer."
+    "TxtAboutMe": "Hello, My name is Alberto Romero, I live in Caracas, Venezuela, I have a degree in International Commerce. I have worked in different areas such as technical support, electronics, logistics, distribution and warehouses. However, since my beginnings I have always been fascinated by web design and programming. Currently, I am in training at Academlo as a Full Stack Web Developer.",
+    "Pokedektext": "Made in React JS with Redux, API PokeApi and Bulma CSS",
+    "SocialMedia": "Landing Page of a Social Media Dashboard, made in Vanilla Js without Frameworks",
+    "AdminDashBoard": "User CRUD, Made in React, API with axios",
+    "QuotesGeneratos": "Famous quotes Ramdom generator, made in React",
+    "RickAndMorty": "Made with React, API Rick And Morty, and Bulma CSS",
+    "postIt": "Made in Svelte, Post It App",
+    "cliamateApp": "Allows according to the location to know the weather in real time",
+    "sunshinePage": "Landing page made with pure HTML and CSS",
+    "PhoneNumber": "Phone Number",
+    "Madewhid": "Made with",
+    "in": "in"
 
 }
