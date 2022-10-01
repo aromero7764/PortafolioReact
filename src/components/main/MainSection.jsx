@@ -6,6 +6,7 @@ import imgCv from '../../assets/img/curriculum-vitae.png'
 import imgEmail from '../../assets/img/mail 3.svg'
 import {useTranslation} from "react-i18next"
 import { Link } from 'react-scroll';
+import './MainSection.css'
 
 
 

@@ -4,6 +4,7 @@ import {useTranslation} from "react-i18next"
 import { useSelector } from 'react-redux';
 import enFlag from '../../assets/img/united-states.png'
 import esFlag from '../../assets/img/spain.png'
+import './NavBarUser.css'
 
 
 
@@ -43,25 +44,25 @@ const changeToogle = ()=> {
             </div>
             <div className={`navbar-menu ${(isActive) && "is-active" }`}>
                 <div className="navbar-end">
-                <Link  className="navbar-item" to="/" spy={true} smooth={true} offset={-40} duration={250}>
+                <Link onClick={()=> changeIsActive()}  className="navbar-item" to="/" spy={true} smooth={true} offset={-40} duration={250}>
                         
                       {t ("Incio")}
                   </Link>
 
-                    <Link  className="navbar-item" to="about" spy={true} smooth={true} offset={-40} duration={250}>
+                    <Link onClick={()=> changeIsActive()}  className="navbar-item" to="about" spy={true} smooth={true} offset={-40} duration={250}>
                     
                     {t ("AboutMe")}
                    </Link>
 
-                   <Link  className="navbar-item" to="skills" spy={true} smooth={true} offset={-40} duration={250}>
+                   <Link onClick={()=> changeIsActive()}  className="navbar-item" to="skills" spy={true} smooth={true} offset={-40} duration={250}>
                     {t ("MySkills")}
                     </Link>
 
-                    <Link  className="navbar-item" to="portafolio" spy={true} smooth={true} offset={-40} duration={250}>
+                    <Link onClick={()=> changeIsActive()}  className="navbar-item" to="portafolio" spy={true} smooth={true} offset={-40} duration={250}>
                     {t ("Portafolio")}
                     </Link>
 
-                    <Link  className="navbar-item" to="contacto" spy={true} smooth={true} offset={-40} duration={250}>
+                    <Link onClick={()=> changeIsActive()}  className="navbar-item" to="contacto" spy={true} smooth={true} offset={-40} duration={250}>
                     {t ("Contacto")}
                     </Link>
 

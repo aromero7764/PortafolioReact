@@ -1,13 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,500;0,600;1,400&display=swap');
-/* Custom properties */
-
-/*  .dark-mode {
-    --black: #fff9f9;
-    --darkgrey: #ebebeb;
-    --white: #000000;
-    --beige: #726962;
-    --ligh: #56545ac0;
-    --bgviolet: #5b595e ; } */
 
 :root {
     /* Colores */
@@ -47,8 +38,10 @@
 }
 
 html, body {
-  /*   overflow-x: hidden; */
+    overflow-x: hidden; 
     scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -61,18 +54,10 @@ body {
 }
 
 
-.contenedor-principal {
-    margin: auto;
-    width: 95%;
-   }
-   
    img{
        max-width: 100%;
    }
    
-   li {
-       list-style: none;
-   }
    
    a{
        color: var(--black);
@@ -80,10 +65,10 @@ body {
    
    }
    
-   p {
+  p {
        color: var(--black);  
    }
-   
+    
    /* Mobile First */
    
    .title {
@@ -121,250 +106,6 @@ body {
    .minimalicon {
        width: 10px;
    }
-   
-   
-   .darlike__label {
-       font-size: 16px;
-       font-weight: normal;
-       color: var(--black);
-   }
-   
-   .darklight {
-       margin-top: 15px;
-       top: 0;
-       display: flex;
-       justify-content: space-between;
-       align-items: center;
-       margin-left: 17px;
-       position: absolute;
-       gap: 6px;
-   }
-   
-   .darlike__label {
-       font-size: 1
-   }
-   
-       .toggle{
-           width: 50px;
-           aspect-ratio: 2;
-           border-radius: 15px;
-           background-color: var(--lightpink);
-           padding: 3px;
-       }
-       
-       .toggle_circle {
-           height: 100%;
-           aspect-ratio: 1;
-           background-color: var(--lightviolet);
-           border-radius: 50px;
-           cursor: pointer;
-           transition: transform 200ms ease;
-       }
-       
-       .toggle_circle-right {
-           transform: translateX(calc(50px - 6px - 100%));
-           transition: transform 200ms ease;
-       }
-   
-   /* MENU */
-   
-   .hamburger {
-       display: block;
-       margin-top: 25px;
-       margin-right: 30px;
-       margin-bottom: 18px;
-   }
-   
-   /* Diseño de las Barras */
-   .bar {
-       display: block;
-       width: 25px;
-       height: 3px;
-       margin: 5px 0 5px auto;
-       transition: all 0.3s ease-in-out;
-       background-color: var(--black);
-   }
-   
-   /* Oculto el menu mientras */
-   .nav-menu {
-       position: fixed;
-       top: 50px;
-       gap: 0;
-       flex-direction: column;
-       width: 35%;
-       text-align: center;
-       transition: 0.2s;
-       background-color: var(--beige);
-       opacity: .9;
-       border-radius: 25% 0 0 25%;
-       cursor: pointer;
-       z-index: 10;
-       right: -100%;
-       transition: right .3s linear;
-   }
-   
-
-   
-   .nav-item {
-       margin: 16px 0;
-       padding: 10px;
-       border-radius: 25px;
-   }
-   
-   .nav-item:hover {
-       background-color: var(--bgviolet);
-       transition: .2s;
-   }
-   
-   /* Efecto JS */
-   .hamburger.active .bar:nth-child(2) {
-       opacity: 0;
-   }
-   .hamburger.active .bar:nth-child(1) {
-       transform: translateY(8px) rotate(45deg) ;
-   }
-   .hamburger.active .bar:nth-child(3) {
-       transform: translateY(-8px) rotate(-45deg) ;
-   }
-   
-   .nav-menu.active {
-       right: 0;
-   }
-   
-   
-   
-   /* seccion principal */
-   
-   .principal-section {
-       display: flex;
-       flex-direction: column;
-       padding-right: 20px;
-   }
-   
-   .title {
-       margin-bottom: 10px;
-   }
-   
-   .imagen-principal {
-        z-index: 2;
-       display: flex;
-       position: relative;
-       margin-top: 30px;
-   }
-   
-   .decoration-container {
-       font-size: 16px;
-       width: 392px;
-       display: flex;
-       flex-wrap: wrap;
-       position: absolute;
-       right: 15px;
-       top: -21px;
-       transform: rotate(326deg);
-       z-index: -1;
-       
-   }
-   .all {
-       height: 2em;
-       border-radius: 0.938em;
-       background-color:var(--bgviolet);
-       margin: 0.438em 0.375em;
-   }
-   
-   .decoration1 {
-       width: 10.313em;
-       margin-left: 2.25em;
-   }
-   
-   .decoration2 {
-       width: 4.938em;
-   }
-   
-   .decoration3 {
-       margin-left: 1.125em;
-       width: 18.438em;
-   }
-   
-   .decoration4 {
-       margin-left: 0;
-       width: 10.25em;
-   }
-   
-   .decoration5 {
-       margin-right: 0;
-       width: 8.938em;
-   }
-   
-   h3 {
-       font-size: 21px;
-       font-weight: 400;
-       color: var(--darkgrey);
-   }
-   
-   .imagen-principal, .main-buttons{
-       margin: 0 auto;
-   }
-   
-   .main-buttons {
-        z-index: 2;
-       width: 60%;
-       position: relative;
-       display: flex;
-       justify-content: space-around;
-       top: -30px;
-       border-radius: 50px;
-   }
-   
-   
-   .conteneder-icon {
-       max-height: 50px;
-       margin: 0;
-       padding: 12px;
-       background-color: var(--lightviolet);
-       border: solid 1px var(--white);
-       border-radius: 50%;
-       cursor: pointer;
-   }
-   
-   .conteneder-icon:hover {
-       transform: scale(1.3);
-       transition: transform 200ms ease;
-   }
-   
-   .contac-button {
-    z-index: 2;
-       display: flex;
-       align-items: center;
-       justify-content: center;
-       
-   }
-   
-   .contac-button__item {
-        position: relative;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       min-width: 418px;
-       height: 59px;
-       margin-bottom: 10px;
-       background-color: var(--lightviolet);
-       color: var(--white);
-       font-family: var(--mainfont);
-       border: none;
-       cursor: pointer;
-       font-size: 21px;
-   }
-   
-   .contac-button:hover {
-       transform: scale(1.02);
-       transition: transform 200ms ease;
-   }
-   
-   .contact-mail_icon {
-       width: 23px;
-       margin-right: 27px;
-   }
-   
    
    
    /* ABOUT ME */
@@ -684,6 +425,11 @@ body {
        margin: 0 auto;
        box-shadow: 1px 647px 29px 11px rgb(0 0 0 / 15%);
    }
+
+   .contenedor-principal {
+    margin: 0 auto;
+    width: 70%;
+   }
    
        .logo-empresa {
            min-width: 65px;
@@ -694,16 +440,7 @@ body {
            min-width: 80px;
        }
    
-   .contenedor-principal {
-       padding-top: 95px;
-       margin: auto;
-       width: 70%;
-      }
-   
-       .title {
-           font-size: 150px;
-           font-weight: 600;
-       }
+
    
    .darklight {
            margin-top: 75px;
@@ -711,44 +448,7 @@ body {
            right: 0;
            margin-right: 36px;
        }
-   
-   /* ++++++++++++++++++++++++++++++++++ */
-  /*  .development{
-           display: inline-block;
-           overflow: hidden;
-           border-right: 6px solid var(--lightviolet);
-           white-space: nowrap;
-           box-shadow: none;
-           animation: typing 2.5s steps(20, end), cursor-blink 0.9s step-end infinite;
-         }
-         
-      
-         @keyframes typing {
-           from {
-             width: 0px;
-           }
-           to {
-             width: 80%;
-             box-shadow: 0px 18px 17px -12px rgba(0,0,0,0.49);
-           }
-         }
-         
-      
-         @keyframes cursor-blink {
-           from,
-           to {
-             border-color: transparent;
-           }
-           80% {
-             border-color: var(--lightviolet);
-             
-           }
-         }
-         
-    
-   /* ´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´ */
-   
-   
+
        .subtitle {
            font-size: 50px;
            font-weight: 600;
@@ -762,70 +462,6 @@ body {
            color: var(--darkgrey);
        }
    
-       .hamburger {
-           display: none;
-       }
-   
-       .nav-menu {
-           display: flex;
-           position: fixed;
-           top: 0;
-           gap: 18px;
-           flex-direction: row;
-           align-items: center;
-           justify-content: flex-end;
-           width: 100%;
-           text-align: center;
-           transition: 0.2s;
-           background-color: var(--white);
-           opacity: .9;
-           border-radius: 25% 0 0 25%;
-           cursor: pointer;
-   /*         z-index: 10; */
-           right: 0;
-           transition: right .3s linear;
-           margin-right: 32px;
-       }
-   
-   /* Para quitarle el que tenia */
-       .nav-item:hover {
-           background-color: transparent;
-           transition: .0s;
-       }
-      .nav-item {
-           position: relative;
-   
-       }
-   /* Para generar la animacion */
-       .nav-item::before {  
-           transform: scaleX(0);
-           transform-origin: bottom right;
-         }
-         
-         .nav-item:hover::before {
-           transform: scaleX(1);
-           transform-origin: bottom left;
-         }
-         
-         .nav-item::before {
-           content: "";
-           display: block;
-           position: absolute;
-           inset: 0 0 0 0;
-           background: var(--ligh);
-          /*  z-index: -1; */
-           transition: transform .3s ease;
-         }
-   /* Fin del NAV */
-   
-   .principal-section {
-       display: grid;
-       padding-right: 20px;
-       grid-template-rows: 6rem 14rem 13rem;
-       grid-template-columns: 27rem 29rem;
-       margin-top: 47px;
-       
-   }
    
    /* primer elemento */
    .imagen-principal {
@@ -854,60 +490,7 @@ body {
        font-size: 72px;
    }
    
-   
-   .introduction {
-        z-index: 3;
-       grid-column: 2;
-       grid-row: 2 / 3;
-       align-self: end;
-       padding-bottom: 20px;
-   }
-   
-   .main-buttons {
-       grid-column: 2;
-       grid-row: 3 / 4;
-       width: 100%;
-       height: 50px;
-       position: relative;
-       display: flex;
-       justify-content: flex-start;
-       top: 0px;
-       border-radius: 50px;
-       gap: 4rem;
-       
-   }
-   
-   .contac-button {
-       grid-column: 2;
-       grid-row: 3 / 4;
-       display: flex;
-       justify-content: center;
-       width: 70%;
-       height: 4.5rem;
-       margin-top: 69px;
-   }
-   
-   .conteneder-icon{
-       border: transparent;
-       box-shadow: -3px 18px 17px -14px rgba(0,0,0,0.41);
-   }
-   
-   
-   
-   /* decoration container */
-   
-   .decoration-container {
-       font-size: 21px;
-       width: 485.5px;
-       
-   }
-   
-   .contac-button__item {
-       position: relative;
-       height: 50px;
-       /* box-shadow: 0px 18px 17px -12px rgba(0,0,0,0.49); */
-   }
-   
+
    .section_skills__articles {
        gap: 26px;
        width: 144%;

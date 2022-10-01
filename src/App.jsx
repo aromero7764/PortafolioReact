@@ -20,7 +20,7 @@ function App() {
       <div className="main">
         <div className="contenedor-principal container">
 
-          <MainSection />
+          <MainSection /> 
           <AboutMe />
          <Skills />
          </div>
