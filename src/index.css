@@ -147,6 +147,11 @@ body {
        margin: 6px auto;
    }
    
+   .skills__article {
+    position: relative;
+    transform-style: preserve-3d;
+       perspective: 1000px;
+   }
    
    .section_skills__articles {
        display: flex;

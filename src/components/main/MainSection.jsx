@@ -17,7 +17,7 @@ const MainSection = () => {
 
 
     return (
-        <div>
+        <div className='hero-body'>
             <section id="home" className="principal-section animate__animated animate__fadeInRight">
                 <h1 className="title">Full Stack Web <br/><span className="development">Developer</span></h1>
                 <h3 className="introduction">JavaScript, React, CSS, HTML, PHP, SQL</h3>
