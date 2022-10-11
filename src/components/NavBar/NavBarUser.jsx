@@ -37,7 +37,8 @@ const changeLenguaje = (lenguajeSelect)=> {
 
 
     return (
-        <nav className={`navbar nav ${(toggle)? "is-dark": ""}`}>
+        <nav className={`navbar nav ${(toggle)? "is-dark": ""} has-shadow is-fixed-top
+        animate__animated animate__slideInLeft`}>
             <div onClick={()=> changeIsActive()} className="navbar-brand">
 
                 <a role="button" className={`navbar-burger ${(isActive) && "is-active" }`}>
@@ -53,7 +54,9 @@ const changeLenguaje = (lenguajeSelect)=> {
                       {t ("Incio")}
                   </Link>
 
-                    <Link onClick={()=> changeIsActive()}  className="navbar-item" to="about" spy={true} smooth={true} offset={-40} duration={250}>
+                    <Link onClick={()=> changeIsActive()}  className="navbar-item" to="about"
+                     spy={true} smooth={true} offset={-40} duration={250}>
+                        
                     
                     {t ("AboutMe")}
                    </Link>

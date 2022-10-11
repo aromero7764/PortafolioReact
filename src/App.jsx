@@ -9,6 +9,9 @@ import Skills from './components/Skills/Skills';
 import Portafolio from './components/Portafolio/Portafolio';
 import Footer from './components/Footer/Footer';
 import 'animate.css'
+import NvBar from './components/NavBar/NvBar';
+import NewSkills from './components/Skills/NewSkills';
+import NewAboutMe from './components/AboutME/NewAboutMe';
 
 
 function App() {
@@ -17,24 +20,26 @@ function App() {
   return (
     
     <div className="App">
-      <div className='animate__animated animate__slideInLeft'>
-      <NavBarUser />
-      </div>
+     
+   <NavBarUser />
+      {/* <NvBar /> */}
+     
       
 
       <div className="main">
 
-        <div className="contenedor-principal container">
+      {/*   <div className="contenedor-principal container"> */}
           <div className='hero is-fullheight-with-navbar'>
           <MainSection />
            </div>
-          <AboutMe />
+          <NewAboutMe />
+     {/*      <AboutMe />
 
 
           
          <Skills />
-       
-         </div>
+        */}
+      {/*    </div> */}
          <Portafolio />
         {/*   <div className="contenedor-principal container"> */}
          <Footer />
