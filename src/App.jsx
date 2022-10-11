@@ -12,6 +12,7 @@ import 'animate.css'
 import NvBar from './components/NavBar/NvBar';
 import NewSkills from './components/Skills/NewSkills';
 import NewAboutMe from './components/AboutME/NewAboutMe';
+import Animation from './components/Animation/animation';
 
 
 function App() {
@@ -29,10 +30,12 @@ function App() {
       <div className="main">
 
       {/*   <div className="contenedor-principal container"> */}
-          <div className='hero is-fullheight-with-navbar'>
+          <div className='hero is-halfheight'>
           <MainSection />
            </div>
           <NewAboutMe />
+        
+          
      {/*      <AboutMe />
 
 

@@ -1,20 +1,18 @@
 import React from 'react';
+import { useTranslation} from "react-i18next"
+import './AboutMe.css'
 
 const NewAboutMe = () => {
+    const [t, i18n] = useTranslation("global")
     return (
         /* <!-- About --> */
         <section class="section" id="about">
             {/* <!-- Title --> */}
             <div class="section-heading">
-                <h3 class="title is-2">About Me</h3>
+                <h3 class="title is-2">{t ("AboutMe")}</h3>
                 {/* <h4 class="subtitle is-5">Jack of all trades, master of "some"</h4> */}
                 <div class="container">
-                    <p>Web developer with more than <strong>4 years</strong> of well-rounded experience with a degree in the
-                        field of
-                        <strong>Computer Science</strong>, extensive knowledge of modern Web techniques and love for <strong>Coffee</strong>.
-                        Looking for an opportunity to work and upgrade, as well as being involved in an organization that
-                        believes
-                        in gaining a competitive edge and giving back to the community.</p>
+                    <p>{t ("TxtAboutMe")} </p>
                 </div>
             </div>
 
@@ -53,9 +51,20 @@ const NewAboutMe = () => {
                                     <div class="media-content">
                                         <div class="content">
                                             <p>
-                                                <strong>Vue.js:</strong>
+                                                <strong>React js:</strong>
                                                 <br />
                                                 <progress class="progress is-primary" value="90" max="100"></progress>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="media">
+                                    <div class="media-content">
+                                        <div class="content">
+                                            <p>
+                                                <strong>Svelte:</strong>
+                                                <br />
+                                                <progress class="progress is-primary" value="40" max="100"></progress>
                                             </p>
                                         </div>
                                     </div>
@@ -89,9 +98,21 @@ const NewAboutMe = () => {
                                     <div class="media-content">
                                         <div class="content">
                                             <p>
-                                                <strong>Databases</strong>
+                                                <strong>SQL:</strong>
                                                 <br />
                                                 <progress class="progress is-primary" value="66" max="100"></progress>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="media">
+                                    <div class="media-content">
+                                        <div class="content">
+                                            <p>
+                                                <strong>PHP:</strong>
+                                                <br />
+                                                <progress class="progress is-primary" value="45" max="100"></progress>
                                             </p>
                                         </div>
                                     </div>
