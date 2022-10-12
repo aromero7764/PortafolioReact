@@ -54,12 +54,6 @@ const changeLenguaje = (lenguajeSelect)=> {
                       {t ("Incio")}
                   </Link>
 
-                    <Link onClick={()=> changeIsActive()}  className="navbar-item" to="about"
-                     spy={true} smooth={true} offset={-40} duration={250}>
-                        
-                    
-                    {t ("AboutMe")}
-                   </Link>
 
                    <Link onClick={()=> changeIsActive()}  className="navbar-item" to="skills" spy={true} smooth={true} offset={-40} duration={250}>
                     {t ("MySkills")}
