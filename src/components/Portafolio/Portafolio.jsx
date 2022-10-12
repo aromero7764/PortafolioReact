@@ -1,13 +1,14 @@
 import React from 'react';
 import Pokedex from '../../assets/img/Pokedesx.jpg'
-import SocialMediaDashboard from '../../assets/img/SocialMediaDashboard.jpg'
-import adminDashboard from '../../assets/img/adminDashboard.jpg'
-import rickandmorty from '../../assets/img/rickandmorty.jpg'
-import Posit from '../../assets/img/Posit.jpg'
-import ClimaApp from '../../assets/img/ClimaApp.jpg'
-import Sunshine from '../../assets/img/sunshine.jpg'
-import quotes from'../../assets/img/quotes.jpg'
+import SocialMediaDashboard from '../../../assets/img/SocialMediaDashboard.jpg'
+import adminDashboard from '../../../assets/img/adminDashboard.jpg'
+import rickandmorty from '../../../assets/img/rickandmorty.jpg'
+import Posit from '../../../assets/img/Posit.jpg'
+import ClimaApp from '../../../assets/img/ClimaApp.jpg'
+import Sunshine from '../../../assets/img/sunshine.jpg'
+import quotes from '../../../assets/img/quotes.jpg'
 import {useTranslation} from "react-i18next"
+
 
 
 
@@ -19,7 +20,7 @@ const Portafolio = () => {
         <section id="portafolio" className="portafolio mainsection">
             <h2 className="section-title subtitle">{t ("Portafolio")}</h2>
 
-            <div className="portafolio_container">
+            <div className="portafolio_container ">
 
                 <div className='box has-background'>
                 <h3 className="is-size-6"><span className='has-text-weight-bold'>Pokedex: </span><br />
