@@ -1,26 +1,23 @@
 
 import './App.css'
 import NavBarUser from './components/NavBar/NavBarUser'
-import 'bulma/css/bulma.min.css';
+import 'bulma/css/bulma.min.css'
 import './assets/css/main.css'
-import MainSection from './components/main/MainSection';
-import Footer from './components/Footer/Footer';
+import MainSection from './components/main/MainSection'
+
 import 'animate.css'
-import NewAboutMe from './components/AboutME/NewAboutMe';
-import MainPortafolio from './components/Portafolio/MainPortafolio';
+import NewAboutMe from './components/AboutME/NewAboutMe'
+import MainPortafolio from './components/Portafolio/MainPortafolio'
+import Contactame from './components/Contactame/Contactame'
 
-
-function App() {
-
-
+function App () {
   return (
-    
+
     <div className="App">
-     
+
    <NavBarUser />
+
       {/* <NvBar /> */}
-     
-      
 
       <div className="main">
 
@@ -31,10 +28,11 @@ function App() {
           <NewAboutMe />
 
           <MainPortafolio />
-       
-         <Footer />
+
+         {/* <Footer /> */}
+         <Contactame />
          {/* </div> */}
- 
+
       </div>
     </div>
   )

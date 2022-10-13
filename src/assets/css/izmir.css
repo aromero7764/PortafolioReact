@@ -18,7 +18,6 @@
   overflow: hidden;
   margin: 0;
   padding: 0;
-  color: #ffffff;
   color: var(--text-color);
   border-radius: 3px;
   border-radius: var(--border-radius); }

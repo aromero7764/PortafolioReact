@@ -475,6 +475,9 @@ body {
     margin-bottom: 6em;
   }
   
+  .contactSection{
+    background-color:var(--bgviolet);
+  }
    
    
    /*··················· INICIO DEL MEDIAQUERY :::::::::::::::::::::*/

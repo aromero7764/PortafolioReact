@@ -1,4 +1,17 @@
 .has-same-height .card {
-    height: 339px !important;
+    height: 458px !important;
+    background-color: var(--white) ;
+
+}
+
+
+.skills{
+    background-color:var(--bgviolet);
+
+}
+
+.cardSkills {
+
+    background-color:var(--white);
 
 }

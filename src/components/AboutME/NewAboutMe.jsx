@@ -1,122 +1,44 @@
-import React from 'react';
-import { useTranslation} from "react-i18next"
+
+import { useTranslation } from 'react-i18next'
 import './AboutMe.css'
 
 const NewAboutMe = () => {
-    const [t, i18n] = useTranslation("global")
-    return (
+  const [t] = useTranslation('global')
+
+  return (
         /* <!-- About --> */
-        <section className="section has-background-light" id="about">
+        <section id="skills" className="section skills" >
             {/* <!-- Title --> */}
-            <div className="section-heading px-4">
-                <h3 className="title is-2">{t ("AboutMe")}</h3>
-                {/* <h4 className="subtitle is-5">Jack of all trades, master of "some"</h4> */}
-                <div className="container">
-                    <p>{t ("TxtAboutMe")} </p>
-                </div>
-            </div>
 
             <div className="columns has-same-height is-gapless">
-            
+
                 <div className="column">
                     {/*   <!-- Profile picture --> */}
                     <div className="card">
-                        <div className="card-image">
-                            <figure className="image is-4by3">
-                                <img src="https://www.magictouchnet.com/wp-content/uploads/2019/01/Web-Applications.jpg" alt="Placeholder image" />
-                            </figure>
+                        <div className="card-content">
+                            <h3 className="title is-2">{t('AboutMe')}</h3>
+                            <div className="container">
+                                <p>{t('TxtAboutMe')} </p>
+                            </div>
+
                         </div>
                     </div>
                 </div>
                 <div className="column">
                     {/*    <!-- Skills --> */}
-                    <div className="card">
-                        <div className="card-content skills-content">
-                            <h3 className="title is-4">Skills</h3>
+                    <div className="card skills-content cardSkills">
+                        <div className="card-content">
+                            <h3 className="title is-4 mb-0">Skills</h3>
                             <div className="content">
 
-                                <article className="media">
-                                    <div className="media-content">
-                                        <div className="content">
-                                            <p>
-                                                <strong>JavaScript:</strong>
-                                                <br />
-                                                <progress className="progress is-primary" value="90" max="100"></progress>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </article>
-
-                                <article className="media">
-                                    <div className="media-content">
-                                        <div className="content">
-                                            <p>
-                                                <strong>React js:</strong>
-                                                <br />
-                                                <progress className="progress is-primary" value="90" max="100"></progress>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article className="media">
-                                    <div className="media-content">
-                                        <div className="content">
-                                            <p>
-                                                <strong>Svelte:</strong>
-                                                <br />
-                                                <progress className="progress is-primary" value="40" max="100"></progress>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </article>
-
-                                <article className="media">
-                                    <div className="media-content">
-                                        <div className="content">
-                                            <p>
-                                                <strong>Node.js:</strong>
-                                                <br />
-                                                <progress className="progress is-primary" value="75" max="100"></progress>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </article>
-
-                                <article className="media">
-                                    <div className="media-content">
-                                        <div className="content">
-                                            <p>
-                                                <strong>HTML5/CSS3</strong>
-                                                <br />
-                                                <progress className="progress is-primary" value="95" max="100"></progress>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </article>
-
-                                <article className="media">
-                                    <div className="media-content">
-                                        <div className="content">
-                                            <p>
-                                                <strong>SQL:</strong>
-                                                <br />
-                                                <progress className="progress is-primary" value="66" max="100"></progress>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </article>
-
-                                <article className="media">
-                                    <div className="media-content">
-                                        <div className="content">
-                                            <p>
-                                                <strong>PHP:</strong>
-                                                <br />
-                                                <progress className="progress is-primary" value="45" max="100"></progress>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </article>
+                            <pre className='pt-0' style={{ whiteSpace: 'pre-wrap', background: 'var(--white)' }}>
+                                <code>{'\n'}
+                                <span style={{ color: 'rgb(171, 75, 184)' }}>class</span>
+                                <span style={{ color: 'rgb(211, 61, 35)' }}> WebDeveloper</span> {'{'}{'\n'}{'  '}
+                                <span style={{ color: 'rgb(171, 75, 184)' }}>constructor </span>
+                                (
+                                    <span>firstName</span>, <span>lastName</span>, <span>skills</span>) {'{'}{'\n'}{'    '}
+                                    <span style={{ color: 'rgb(211, 61, 35)' }}>this</span>.<span>firstName</span> = <span style={{ color: 'rgb(211, 61, 35)' }}>this</span>.<span>firstName</span>;{'\n'}{'    '}<span style={{ color: 'rgb(211, 61, 35)' }}>this</span>.<span>lastName</span> = <span style={{ color: 'rgb(211, 61, 35)' }}>this</span>.<span>lastName</span>;{'\n'}{'    '}<span style={{ color: 'rgb(211, 61, 35)' }}>this</span>.<span>skills</span> = <span style={{ color: 'rgb(211, 61, 35)' }}>this</span>.<span>skills</span>;{'\n'}{'  '}{'}'}{'\n'}{'}'}{'\n'}{'\n'}<span style={{ color: 'rgb(171, 75, 184)' }}>const</span> <span style={{ color: 'rgb(70, 146, 136)' }}>Alberto</span> = <span style={{ color: 'rgb(171, 75, 184)' }}>new</span> <span style={{ color: 'rgb(211, 61, 35)' }}>WebDeveloper </span>({'\n'}{'  '}<span style={{ color: 'rgb(117, 36, 47)' }}>"Alberto"</span>, {'\n'}{'  '}<span style={{ color: 'rgb(117, 36, 47)' }}>"Romero"</span>, {'\n'}{'  '}{'{'} {'\n'}{'      '}<span>frontEnd</span>: [<span style={{ color: 'rgb(117, 36, 47)' }}>"HTML"</span>, <span style={{ color: 'rgb(117, 36, 47)' }}>"CSS"</span>, <span style={{ color: 'rgb(117, 36, 47)' }}>"JS"</span>, <span style={{ color: 'rgb(117, 36, 47)' }}>"Svelte"</span>, <span style={{ color: 'rgb(117, 36, 47)' }}>"React"</span>], {'\n'}{'      '}<span>backEnd</span>: [<span style={{ color: 'rgb(117, 36, 47)' }}>"Node Js"</span>, <span style={{ color: 'rgb(117, 36, 47)' }}>"SQL"</span>, <span style={{ color: 'rgb(117, 36, 47)' }}>"MySql"</span>, <span style={{ color: 'rgb(117, 36, 47)' }}>"Firebase"</span>, <span style={{ color: 'rgb(117, 36, 47)' }}>"PostgreSQL"</span>]{'\n'}{'  '}{'}'},{'\n'}){'\n'}</code>{'\n'}</pre>
                             </div>
                         </div>
                     </div>
@@ -124,7 +46,7 @@ const NewAboutMe = () => {
             </div>
         </section>
 
-    );
-};
+  )
+}
 
-export default NewAboutMe;
+export default NewAboutMe
