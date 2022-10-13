@@ -17,6 +17,11 @@
     "sunshinePage": "Landing page made with pure HTML and CSS",
     "PhoneNumber": "Phone Number",
     "Madewhid": "Made with",
-    "in": "in"
+    "in": "in",
+    "send": "Submit",
+    "mensaje": "Message",
+    "nombre": "Name",
+    "nombremsj": "Write your name",
+    "emailmsj": "Write your email"
 
 }

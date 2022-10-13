@@ -1,6 +1,25 @@
 import { useTranslation } from 'react-i18next'
+import { useForm, ValidationError } from '@formspree/react';
+import './contactame.css'
+
 
 const Contactame = () => {
+
+  const [state, handleSubmit] = useForm("xlevloey")
+
+  if (state.succeeded) {
+    return <p>Thanks you!</p>;
+}
+
+
+
+  const submit = (data) => {
+
+    console.log(data)
+}
+
+
+
   const [t] = useTranslation('global')
   return (
         <section className="section contactSection" id="contact">
@@ -14,17 +33,35 @@ const Contactame = () => {
           <div className="columns">
             <div className="column is-6 is-offset-3">
               <div className="box">
+              <form onSubmit={handleSubmit}>
                 <div className="field">
-                  <label className="label">Name</label>
+                  <label htmlFor="name" className="label">{t ("nombre")}</label>
                   <div className="control">
-                    <input className="input" type="text" placeholder="Write something"/>
+                    <input className="input"
+                     id="name"
+                     type="text" 
+                     name="name"
+                    placeholder="Write your name"
+                  />
+                  <ValidationError
+                    prefix="name"
+                    field="name"
+                    errors={state.errors}
+                  />
                   </div>
                 </div>
 
                 <div className="field">
-                  <label className="label">Email</label>
+                  <label htmlFor="email" className="label">Email</label>
                   <div className="control has-icons-left">
-                    <input className="input" type="email" placeholder="Email" />
+                    <input  className="input" type="email" placeholder="Enter your email" 
+                      id="email"
+                      name="email" required/>
+                  <ValidationError
+                    prefix="Email"
+                    field="email"
+                    errors={state.errors}
+                  />
                     <span className="icon is-small is-left">
                       <i className="fas fa-envelope"></i>
                     </span>
@@ -32,20 +69,28 @@ const Contactame = () => {
                 </div>
 
                 <div className="field">
-                  <label className="label">Message</label>
+                  <label htmlFor="message" className="label">{t ("mensaje")}</label>
                   <div className="control">
-                    <textarea className="textarea" placeholder="Textarea" style={{ height: '128px' }}></textarea>
+                    <textarea className="textarea" placeholder={t ("mensaje")} style={{ height: '128px' }}
+                    id="message"
+                    name="message"></textarea>
+                  <ValidationError
+                    prefix="Message"
+                    field="message"
+                    errors={state.errors}
+                      />
                   </div>
                 </div>
 
-                <div className="field is-grouped has-text-centered">
-                  <div className="control">
-                    <button className="button is-link is-large"><span className="icon">
+                <div className="field is-grouped has-text-centered is-justify-content-center">
+                  <div className="control contac-button2">
+                    <button type="submit" disabled={state.submitting} className="contac-button__item rgb"><span className="icon">
                         <i className="fas fa-envelope"></i>
                       </span>
-                      <span>Submit</span></button>
+                      <span>{t ("send")}</span></button>
                   </div>
                 </div>
+                </form>
               </div>
             </div>
           </div>

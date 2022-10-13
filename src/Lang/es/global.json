@@ -16,6 +16,12 @@
     "sunshinePage": "Landing page ralizado con HTML y CSS puro",
     "PhoneNumber": "Número Celular",
     "Madewhid": "Hecho con",
-    "in": "en"
+    "in": "en",
+    "send": "Enviar",
+    "mensaje": "Mensaje",
+    "nombre": "Nombre",
+    "nombremsj": "Escriba su nombre",
+    "emailmsj": "Escriba su email"
+    
 
 }

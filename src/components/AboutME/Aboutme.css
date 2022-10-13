@@ -1,6 +1,7 @@
 .has-same-height .card {
-    height: 458px !important;
+    height: 531px !important;
     background-color: var(--white) ;
+    overflow-y: auto !important;
 
 }
 
@@ -15,3 +16,4 @@
     background-color:var(--white);
 
 }
+
