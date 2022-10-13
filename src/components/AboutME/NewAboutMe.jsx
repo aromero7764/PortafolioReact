@@ -1,9 +1,12 @@
 
+import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next'
+import { TypeAnimation } from 'react-type-animation';
 import './AboutMe.css'
 
 const NewAboutMe = () => {
   const [t] = useTranslation('global')
+
 
   return (
         /* <!-- About --> */
@@ -17,8 +20,10 @@ const NewAboutMe = () => {
                     <div className="card">
                         <div className="card-content">
                             <h3 className="title is-2">{t('AboutMe')}</h3>
-                            <div className="container">
-                                <p>{t('TxtAboutMe')} </p>
+                            <div className="container has-text-centered">
+                                <p> {t('TxtAboutMe')}
+
+                                </p>
                             </div>
 
                         </div>

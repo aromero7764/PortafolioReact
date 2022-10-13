@@ -1,24 +1,13 @@
 import { useTranslation } from 'react-i18next'
-import { useForm, ValidationError } from '@formspree/react';
+import { useForm, ValidationError } from '@formspree/react'
 import './contactame.css'
 
-
 const Contactame = () => {
-
-  const [state, handleSubmit] = useForm("xlevloey")
+  const [state, handleSubmit] = useForm('xlevloey')
 
   if (state.succeeded) {
-    return <p>Thanks you!</p>;
-}
-
-
-
-  const submit = (data) => {
-
-    console.log(data)
-}
-
-
+    return <p>Thanks you!</p>
+  }
 
   const [t] = useTranslation('global')
   return (
@@ -35,13 +24,13 @@ const Contactame = () => {
               <div className="box">
               <form onSubmit={handleSubmit}>
                 <div className="field">
-                  <label htmlFor="name" className="label">{t ("nombre")}</label>
+                  <label htmlFor="name" className="label">{t('nombre')}</label>
                   <div className="control">
                     <input className="input"
                      id="name"
-                     type="text" 
+                     type="text"
                      name="name"
-                    placeholder="Write your name"
+                    placeholder={t('nombremsj')}
                   />
                   <ValidationError
                     prefix="name"
@@ -54,7 +43,7 @@ const Contactame = () => {
                 <div className="field">
                   <label htmlFor="email" className="label">Email</label>
                   <div className="control has-icons-left">
-                    <input  className="input" type="email" placeholder="Enter your email" 
+                    <input className="input" type="email" placeholder={t('emailmsj')}
                       id="email"
                       name="email" required/>
                   <ValidationError
@@ -69,9 +58,9 @@ const Contactame = () => {
                 </div>
 
                 <div className="field">
-                  <label htmlFor="message" className="label">{t ("mensaje")}</label>
+                  <label htmlFor="message" className="label">{t('mensaje')}</label>
                   <div className="control">
-                    <textarea className="textarea" placeholder={t ("mensaje")} style={{ height: '128px' }}
+                    <textarea className="textarea" placeholder={t('mensaje')} style={{ height: '128px' }}
                     id="message"
                     name="message"></textarea>
                   <ValidationError
@@ -87,7 +76,7 @@ const Contactame = () => {
                     <button type="submit" disabled={state.submitting} className="contac-button__item rgb"><span className="icon">
                         <i className="fas fa-envelope"></i>
                       </span>
-                      <span>{t ("send")}</span></button>
+                      <span>{t('send')}</span></button>
                   </div>
                 </div>
                 </form>

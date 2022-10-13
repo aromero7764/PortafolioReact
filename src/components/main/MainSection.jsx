@@ -40,7 +40,7 @@ const MainSection = () => {
                     </div>
                     <div className="conteneder-icon">
                         <a className="nav-link"
-                        href="https://drive.google.com/file/d/120va5Hb-phEdcblzGy0nLS5JshWA9385/view?usp=sharing" target="_blank" rel="noreferrer">
+                        href="https://drive.google.com/file/d/1hiB8BeMT7zYfT48tafHT8Akcsrqts5D4/view?usp=sharing" target="_blank" rel="noreferrer">
                             <img className="button-icon" src={imgCv} alt="enlace-cv"/></a>
                     </div>
                 </div>

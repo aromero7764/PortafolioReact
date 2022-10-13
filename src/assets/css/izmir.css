@@ -1,6 +1,6 @@
 /* Izmir - ImageHover CSS LIbrary
   ----------------------------- */
-  @import url('./main.css');
+
 .c4-izmir {
   --text-color: var(--black);
   --primary-color: var(--bgviolet);
