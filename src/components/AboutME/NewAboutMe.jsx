@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next'
-import './AboutMe.css'
+import './Aboutme.css'
 import { AnimationOnScroll } from 'react-animation-on-scroll'
 
 const NewAboutMe = () => {
