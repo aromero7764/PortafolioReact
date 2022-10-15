@@ -1,12 +1,20 @@
 import { useTranslation } from 'react-i18next'
 import { useForm, ValidationError } from '@formspree/react'
+import toast, { Toaster } from 'react-hot-toast'
 import './contactame.css'
 
 const Contactame = () => {
   const [state, handleSubmit] = useForm('xlevloey')
 
-  if (state.succeeded) {
-    return <p>Thanks you!</p>
+  const enviarEmail = (e) => {
+    e.preventDefault()
+    handleSubmit(e)
+    toast.success('Correo Enviado')
+    e.target.reset()
+
+    if (state.succeeded) {
+      return toast.success('Correo Enviado')
+    }
   }
 
   const [t] = useTranslation('global')
@@ -22,7 +30,7 @@ const Contactame = () => {
           <div className="columns">
             <div className="column is-6 is-offset-3">
               <div className="box">
-              <form onSubmit={handleSubmit}>
+              <form onSubmit={enviarEmail}>
                 <div className="field">
                   <label htmlFor="name" className="label">{t('nombre')}</label>
                   <div className="control">
@@ -81,9 +89,12 @@ const Contactame = () => {
                 </div>
                 </form>
               </div>
+                                <Toaster
+                    position="bottom-right"
+                    reverseOrder={true}
+                  />
             </div>
           </div>
-
         </div>
       </section>
   )

@@ -7,7 +7,6 @@ import 'bulma/css/bulma.min.css'
 import './assets/css/main.css'
 import 'animate.css'
 import './assets/css/izmir.css'
-import { AnimationOnScroll } from 'react-animation-on-scroll'
 
 function App () {
   return (
@@ -15,15 +14,14 @@ function App () {
           <NavBarUser />
           <div className="main">
 <MainSection />
-          
+
    <NewAboutMe />
-            
-           
+
             <MainPortafolio />
             <Contactame />
           </div>
         </div>
-  );
+  )
 }
 
 export default App

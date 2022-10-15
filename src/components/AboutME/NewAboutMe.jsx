@@ -1,11 +1,10 @@
-import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next'
-import { TypeAnimation } from 'react-type-animation';
 import './AboutMe.css'
 import { AnimationOnScroll } from 'react-animation-on-scroll'
 
 const NewAboutMe = () => {
   const [t] = useTranslation('global')
+
 
 
   return (
@@ -15,25 +14,25 @@ const NewAboutMe = () => {
 
             <div className="columns has-same-height is-gapless">
 
-         
                 <div className="column">
                     {/*   <!-- Profile picture --> */}
                     <AnimationOnScroll animateIn="animate__fadeInLeft">
                     <div className="card">
                         <div className="card-content">
                             <h3 className="title is-2">{t('AboutMe')}</h3>
-                            <div className="container has-text-centered">
-                                <p> {t('TxtAboutMe')}
+                            <div className="container parrafo_skills">
+                                <p className=' parrafo_skills'> {t('TxtAboutMe')}
 
                                 </p>
+                                <p className=' parrafo_skills'> {t('TxtAboutMe2')} </p>
+
                             </div>
 
                         </div>
                     </div>
                     </AnimationOnScroll>
                 </div>
-                
-               
+
                 <div className="column">
                     {/*    <!-- Skills --> */}
                     <AnimationOnScroll animateIn="animate__fadeInRight">
@@ -49,13 +48,15 @@ const NewAboutMe = () => {
                                 <span style={{ color: 'rgb(171, 75, 184)' }}>constructor </span>
                                 (
                                     <span>firstName</span>, <span>lastName</span>, <span>skills</span>) {'{'}{'\n'}{'    '}
-                                    <span style={{ color: 'rgb(211, 61, 35)' }}>this</span>.<span>firstName</span> = <span style={{ color: 'rgb(211, 61, 35)' }}>this</span>.<span>firstName</span>;{'\n'}{'    '}<span style={{ color: 'rgb(211, 61, 35)' }}>this</span>.<span>lastName</span> = <span style={{ color: 'rgb(211, 61, 35)' }}>this</span>.<span>lastName</span>;{'\n'}{'    '}<span style={{ color: 'rgb(211, 61, 35)' }}>this</span>.<span>skills</span> = <span style={{ color: 'rgb(211, 61, 35)' }}>this</span>.<span>skills</span>;{'\n'}{'  '}{'}'}{'\n'}{'}'}{'\n'}{'\n'}<span style={{ color: 'rgb(171, 75, 184)' }}>const</span> <span style={{ color: 'rgb(70, 146, 136)' }}>Alberto</span> = <span style={{ color: 'rgb(171, 75, 184)' }}>new</span> <span style={{ color: 'rgb(211, 61, 35)' }}>WebDeveloper </span>({'\n'}{'  '}<span style={{ color: 'rgb(117, 36, 47)' }}>"Alberto"</span>, {'\n'}{'  '}<span style={{ color: 'rgb(117, 36, 47)' }}>"Romero"</span>, {'\n'}{'  '}{'{'} {'\n'}{'      '}<span>frontEnd</span>: [<span style={{ color: 'rgb(117, 36, 47)' }}>"HTML"</span>, <span style={{ color: 'rgb(117, 36, 47)' }}>"CSS"</span>, <span style={{ color: 'rgb(117, 36, 47)' }}>"JS"</span>, <span style={{ color: 'rgb(117, 36, 47)' }}>"Svelte"</span>, <span style={{ color: 'rgb(117, 36, 47)' }}>"React"</span>], {'\n'}{'      '}<span>backEnd</span>: [<span style={{ color: 'rgb(117, 36, 47)' }}>"PHP"</span>, <span style={{ color: 'rgb(117, 36, 47)' }}>"SQL"</span>, <span style={{ color: 'rgb(117, 36, 47)' }}>"MySql"</span>]{'\n'}{'  '}{'}'},{'\n'}){'\n'}</code>{'\n'}</pre>
+                                    
+                                    <span style={{ color: 'rgb(211, 61, 35)' }}>this
+                                    </span>.<span>firstName</span> = <span>firstName</span>;{'\n'}{'    '}<span style={{ color: 'rgb(211, 61, 35)' }}>this</span>.<span>lastName</span> = <span>lastName</span>;{'\n'}{'    '}<span style={{ color: 'rgb(211, 61, 35)' }}>this</span>.<span>skills</span> = <span>skills</span>;{'\n'}{'  '}{'}'}{'\n'}{'}'}{'\n'}{'\n'}<span style={{ color: 'rgb(171, 75, 184)' }}>const</span> <span style={{ color: 'rgb(70, 146, 136)' }}>Alberto</span> = <span style={{ color: 'rgb(171, 75, 184)' }}>new</span> <span style={{ color: 'rgb(211, 61, 35)' }}>WebDeveloper </span>({'\n'}{'  '}<span style={{ color: 'rgb(117, 36, 47)' }}>"Alberto"</span>, {'\n'}{'  '}<span style={{ color: 'rgb(117, 36, 47)' }}>"Romero"</span>, {'\n'}{'  '}{'{'} {'\n'}{'      '}<span style={{ textDecorationLine: 'underline' }}>Front-End</span>: [<span style={{ color: 'var(--lightviolet)' }}>"HTML"</span>, <span style={{ color: 'var(--lightviolet)' }}>"CSS"</span>, <span style={{ color: 'var(--lightviolet)' }}>"JS"</span>, <span style={{ color: 'var(--lightviolet)' }}>"Svelte"</span>, <span style={{ color: 'var(--lightviolet)' }}>"React"</span>], {'\n'}{'      '}<span style={{ textDecorationLine: 'underline' }}>Back-End</span>: [<span style={{ color: 'var(--lightviolet)' }}>"PHP"</span>, <span style={{ color: 'var(--lightviolet)' }}>"SQL"</span>, <span style={{ color: 'var(--lightviolet)'}}>"MySql"</span>]{'\n'}{'  '}{'}'},{'\n'}){'\n'}</code>{'\n'}</pre>
                             </div>
                         </div>
                     </div>
                     </AnimationOnScroll>
                 </div>
-              
+
             </div>
         </section>
 

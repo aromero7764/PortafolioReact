@@ -22,6 +22,8 @@
     "mensaje": "Message",
     "nombre": "Name",
     "nombremsj": "Write your name",
-    "emailmsj": "Write your email"
+    "emailmsj": "Write your email",
+    "TxtAboutMe2" : "Plus to my passion for web development, I have professional experience in logistics, administrative and warehouse processes. I have a natural ability to understand how to apply web solutions to business problems.",
+    "txtModal": "Thank you for your email, reply promptly"
 
 }

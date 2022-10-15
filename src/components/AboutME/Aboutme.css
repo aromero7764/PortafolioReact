@@ -17,3 +17,17 @@
 
 }
 
+
+.skillText{
+    color red;
+    text-decoration: underline;
+}
+
+.parrafo_skills {
+    color: #2A2A2A;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: justify;
+    padding: 9px;
+}

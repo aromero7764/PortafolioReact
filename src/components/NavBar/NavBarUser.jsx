@@ -71,12 +71,12 @@ const NavBarUser = () => {
 
                 </div>
             </div>
-            <article onClick={() => changeToogle()} className="darklight">
+        {/*     <article onClick={() => changeToogle()} className="darklight">
             <h2 id="toggle-label" className="darlike__label">{(toggle) ? 'Dark' : 'Light'}</h2>
               <div id="toggle" className="toggle">
                 <div id="toggle-circle" className={`toggle_circle ${(toggle) && 'toggle_circle-right'}`}></div>
               </div>
-          </article>
+          </article> */}
     </nav>
   )
 }
