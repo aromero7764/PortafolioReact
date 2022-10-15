@@ -1,18 +1,19 @@
-import React from 'react';
-import {useTranslation} from "react-i18next"
+import { useTranslation } from 'react-i18next'
 import Posit from '../../../assets/img/Posit.jpg'
+import { AnimationOnScroll } from 'react-animation-on-scroll'
 
 const PostItApp = () => {
-    const [t, i18n] = useTranslation("global")
+  const [t] = useTranslation('global')
 
-    return (
+  return (
         <div className="column is-4-desktop is-3-widescreen is-half-tablet">
 
+<AnimationOnScroll animateIn="animate__fadeInUpBig">
         <div className="card rgb">
             <header className="card-header">
                 <p className="card-header-title">
                     <span>Post It CRUD: </span>
-                   
+
                 </p>
             </header>
             <div onClick={() => window.open('https://profound-begonia-f76288.netlify.app/', '_blank')}
@@ -22,7 +23,7 @@ const PostItApp = () => {
                     <img src={Posit} alt="Social Media Imgane" />
                     <figcaption className='c4-layout-top-left'>
                         <div className="c4-reveal-left c4-delay-200">
-                            <p className='is-size-7'> {t ("postIt")}</p>
+                            <p className='is-size-7'> {t('postIt')}</p>
                         </div>
                         <br />
                         <div className='is-flex'>
@@ -41,20 +42,19 @@ const PostItApp = () => {
                         </div>
                     </figcaption>
 
-
                 </figure>
 
             </div>
 
-
             <footer className="card-footer">
-                <a href="https://profound-begonia-f76288.netlify.app/" target="_blank" className="card-footer-item"><i className="fas fa-search" aria-hidden="true"></i>Preview</a>
-                <a href="https://github.com/aromero7764/PostIt" target="_blank" className="card-footer-item"><i className="fas fa-code" aria-hidden="true"></i>Source Code</a>
+                <a href="https://profound-begonia-f76288.netlify.app/" target="_blank" className="card-footer-item" rel="noreferrer"><i className="fas fa-search" aria-hidden="true"></i>Preview</a>
+                <a href="https://github.com/aromero7764/PostIt" target="_blank" className="card-footer-item" rel="noreferrer"><i className="fas fa-code" aria-hidden="true"></i>Source Code</a>
             </footer>
         </div>
+        </AnimationOnScroll>
 
     </div>
-    );
-};
+  )
+}
 
-export default PostItApp;
+export default PostItApp

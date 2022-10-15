@@ -12,6 +12,8 @@
     --ligh: #cfb5ffc0;
     --bgviolet: #ece4fb ;
     --bgcardskill:  #ffffff;
+    --bgcolor: "";
+    --bgcolor2: "";
 
     /* Tipografía */
     --mainfont: 'Montserrat', sans-serif;
@@ -22,12 +24,13 @@
     --darkviolet: #a08bff;
     --black: #fff9f9;
     --darkgrey: #ebebeb;
-    --white: #000000;
+    --white: rgb(9, 48, 102);
     --beige: #726962;
     --ligh: #56545ac0;
-    --bgviolet: #5b595e ; 
-    --bgcardskill: #5b595e; 
-
+    --bgviolet: #3e2e55 ; 
+    --bgcardskill: #5b595e;
+    --bgcolor: linear-gradient(to top, #051937, #022868, #2b3298, #6132c4, #a11be9);
+    --bgcolor2: linear-gradient(to top, #625d60, #605a5f, #5d585f, #59565f, #54545f, #525369, #4e5373, #48537d, #505191, #624ba2, #7d3fac, #9d25af);
 }
 
 
@@ -53,6 +56,7 @@ body {
     font-family: var(--mainfont);
     font-size: 16px;
     background-color: var(--white);
+    background-image: var(--bgcolor);
     
 }
 
@@ -66,6 +70,10 @@ body {
        color: var(--black);
        text-decoration: none;
    
+   }
+
+   a:hover {
+    color: var(--white);
    }
    
   p {
@@ -477,20 +485,14 @@ body {
   
   .contactSection{
     background-color:var(--bgviolet);
+    background-image: var(--bgcolor2);
   }
    
    
    /*··················· INICIO DEL MEDIAQUERY :::::::::::::::::::::*/
    @media screen and (min-width: 678px) {
    
-   .main {
-   
-       display: flex;
-       max-width: 1173px;
-       flex-direction: column;
-       margin: 0 auto;
-       box-shadow: 1px 647px 29px 11px rgb(0 0 0 / 15%);
-   }
+
 
    .contenedor-principal {
     margin: 0 auto;
@@ -527,27 +529,7 @@ body {
            font-weight: 400;
            color: var(--darkgrey);
        }
-   
-   
-   /* primer elemento */
-   .imagen-principal {
-       width: 100%;
-       grid-column: 1;
-       grid-row: 1 / 4;
-       align-items: end;
-       padding-bottom: 42px;
-       
-   }
-   
-   .imagen-personal {
-       width: 100%;
-       max-width: 376px;
-       height: 463px;
-       padding-top: 35px;
-       box-shadow: -6px 40px 13px -24px rgba(0,0,0,0.35);
-       border-bottom-left-radius: 82px;
-       border-bottom-right-radius: 15px;
-   }
+
    
    .title {
        grid-column: 2;

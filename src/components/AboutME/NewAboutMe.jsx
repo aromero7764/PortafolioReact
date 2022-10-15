@@ -1,8 +1,8 @@
-
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next'
 import { TypeAnimation } from 'react-type-animation';
 import './AboutMe.css'
+import { AnimationOnScroll } from 'react-animation-on-scroll'
 
 const NewAboutMe = () => {
   const [t] = useTranslation('global')
@@ -15,8 +15,10 @@ const NewAboutMe = () => {
 
             <div className="columns has-same-height is-gapless">
 
+         
                 <div className="column">
                     {/*   <!-- Profile picture --> */}
+                    <AnimationOnScroll animateIn="animate__fadeInLeft">
                     <div className="card">
                         <div className="card-content">
                             <h3 className="title is-2">{t('AboutMe')}</h3>
@@ -28,9 +30,13 @@ const NewAboutMe = () => {
 
                         </div>
                     </div>
+                    </AnimationOnScroll>
                 </div>
+                
+               
                 <div className="column">
                     {/*    <!-- Skills --> */}
+                    <AnimationOnScroll animateIn="animate__fadeInRight">
                     <div className="card skills-content cardSkills">
                         <div className="card-content">
                             <h3 className="title is-2 mb-0">Skills</h3>
@@ -47,7 +53,9 @@ const NewAboutMe = () => {
                             </div>
                         </div>
                     </div>
+                    </AnimationOnScroll>
                 </div>
+              
             </div>
         </section>
 

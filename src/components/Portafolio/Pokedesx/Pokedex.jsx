@@ -1,19 +1,19 @@
-import React from 'react';
-import {useTranslation} from "react-i18next"
+import React from 'react'
+import { useTranslation } from 'react-i18next'
 import PokedexImg from '../../../assets/img/Pokedesx.jpg'
+import { AnimationOnScroll } from 'react-animation-on-scroll'
 
 const Pokedex = () => {
+  const [t] = useTranslation('global')
 
-    const [t, i18n] = useTranslation("global")
-
-    return (
+  return (
         <div className="column is-4-desktop is-3-widescreen is-half-tablet">
-
+            <AnimationOnScroll animateIn="animate__fadeInLeft">
             <div className="card rgb">
                 <header className="card-header">
                     <p className="card-header-title">
                         <span>Pokedex </span>
-                       
+
                     </p>
                 </header>
                 <div onClick={() => window.open('https://zippy-hotteok-f9f10c.netlify.app/', '_blank')}
@@ -23,7 +23,7 @@ const Pokedex = () => {
                         <img src={PokedexImg} alt="PokedexImgane" />
                         <figcaption className='c4-layout-top-left'>
                             <div className="c4-reveal-left c4-delay-200">
-                                <p className='is-size-7'>{t("Pokedektext")}</p>
+                                <p className='is-size-7'>{t('Pokedektext')}</p>
                             </div>
                             <br />
                             <div className='is-flex'>
@@ -39,20 +39,19 @@ const Pokedex = () => {
                             </div>
                         </figcaption>
 
-
                     </figure>
 
                 </div>
 
-
                 <footer className="card-footer">
-                    <a href="https://zippy-hotteok-f9f10c.netlify.app/" target="_blank" className="card-footer-item"><i className="fas fa-search" aria-hidden="true"></i>Preview</a>
-                    <a href="https://github.com/aromero7764/Pokedex" target="_blank" className="card-footer-item"><i className="fas fa-code" aria-hidden="true"></i>Source Code</a>
+                    <a href="https://zippy-hotteok-f9f10c.netlify.app/" target="_blank" className="card-footer-item" rel="noreferrer"><i className="fas fa-search" aria-hidden="true"></i>Preview</a>
+                    <a href="https://github.com/aromero7764/Pokedex" target="_blank" className="card-footer-item" rel="noreferrer"><i className="fas fa-code" aria-hidden="true"></i>Source Code</a>
                 </footer>
             </div>
+            </AnimationOnScroll>
 
         </div>
-    );
-};
+  )
+}
 
-export default Pokedex;
+export default Pokedex

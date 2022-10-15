@@ -1,5 +1,5 @@
 
-import fotoPersonal from '../../assets/img/personal-foto_m.png'
+import fotoPersonal from '../../assets/img/nuevaFoto.png'
 import imgLinkedin from '../../assets/img/cib_linkedin-in.svg'
 import imgGitHub from '../../assets/img/iconmonstr-github-1.svg'
 import imgCv from '../../assets/img/curriculum-vitae.png'
@@ -12,6 +12,7 @@ const MainSection = () => {
   const [t] = useTranslation('global')
 
   return (
+    <div className='hero is-halfheight'>
         <div className='hero-body is-align-items-start is-align-self-center' id="home">
             <section className="principal-section animate__animated animate__fadeInRight">
                 <h1 className="title">Full Stack Web <br/><span className="development">Developer</span></h1>
@@ -55,6 +56,7 @@ const MainSection = () => {
 
                 </div>
             </section>
+        </div>
         </div>
   )
 }
