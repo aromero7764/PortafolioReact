@@ -25,7 +25,7 @@ const Pokedex = () => {
                             <div className="c4-reveal-left c4-delay-200">
                                 <p className='is-size-7'>{t('Pokedektext')}</p>
                             </div>
-                            <br />
+                           
                             <div className='is-flex'>
                                 <span className="icon is-small">
                                     <img src="https://bulma.io/assets/Bulma%20Icon.svg" alt="" />

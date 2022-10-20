@@ -25,7 +25,7 @@ const SocialMediaDashboard = () => {
                         <div className="c4-reveal-left c4-delay-200">
                             <p className='is-size-7'>{t('SocialMedia')}</p>
                         </div>
-                        <br />
+                  
                         <div className='is-flex'>
                             <span className="icon is-small">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="" />

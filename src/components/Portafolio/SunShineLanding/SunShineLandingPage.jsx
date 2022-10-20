@@ -24,7 +24,7 @@ const SunShineLandingPage = () => {
                             <div className="c4-reveal-left c4-delay-200">
                                 <p className='is-size-7'> {t('sunshinePage')}</p>
                             </div>
-                            <br />
+                      
                             <div className='is-flex'>
 
                                 <span className="icon is-small mx-1">

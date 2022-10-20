@@ -8,7 +8,7 @@
     "TxtAboutMe": "Hola! mi nombre es Alberto Romero, soy desarrollador web con experiencia HTML/CSS JavaScript, React, Node Js y Svelte, tengo experiencia en creacion de Backend y FrontEnd, implementacion de variedad de frameworks, librerias y consumo de API. Amante del cafe y los animales",
     "Pokedektext": "Realizado en React JS con Redux, consumo de API y Bulma CSS",
     "SocialMedia": "Landing Page de una Social Media Dashboard, realizado en Vanilla Js",
-    "AdminDashBoard": "CRUD de usuarios, Realizado en React, consumo de API con axios",
+    "AdminDashBoard": "CRUD de usuarios, en React, API",
     "QuotesGeneratos": "Generador Ramdom de citas celebres, realizado en React",
     "RickAndMorty": "Consumo de API Rick And Morty con axios, estilos con Bulma CSS",
     "postIt": "Realizado en Svelte, aplicativo de Post It",
