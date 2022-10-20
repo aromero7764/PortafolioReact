@@ -11,9 +11,19 @@ import './assets/css/izmir.css'
 function App () {
   return (
         <div className="App">
-          <NavBarUser />
+          
           <div className="main">
-<MainSection />
+
+          <div className='hero is-halfheight'>
+            
+            <div class="hero-head">
+              <NavBarUser />
+            </div> 
+            <MainSection />
+            </div>  
+
+            
+
 
    <NewAboutMe />
 

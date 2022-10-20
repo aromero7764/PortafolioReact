@@ -81,7 +81,7 @@ const Contactame = () => {
 
                 <div className="field is-grouped has-text-centered is-justify-content-center">
                   <div className="control contac-button2">
-                    <button type="submit" disabled={state.submitting} className="contac-button__item rgb"><span className="icon">
+                    <button type="submit" disabled={state.submitting} className="contac-button__item rgb buttonA"><span className="icon">
                         <i className="fas fa-envelope"></i>
                       </span>
                       <span>{t('send')}</span></button>

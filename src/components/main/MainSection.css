@@ -165,7 +165,7 @@ h3 {
     .main {
     
         display: flex;
-        max-width: 1125px;
+        max-width: 72.68em;
         flex-direction: column;
         margin: 0 auto;
         box-shadow: 1px 390px 29px 11px rgb(0 0 0 / 15%);

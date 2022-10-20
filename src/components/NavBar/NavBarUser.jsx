@@ -32,7 +32,7 @@ const NavBarUser = () => {
   }
 
   return (
-        <nav className={`navbar nav ${(toggle) ? 'is-dark' : ''} is-fixed-top
+        <nav className={`navbar nav ${(toggle) ? 'is-dark' : ''}
         animate__animated animate__slideInLeft`}>
             <div onClick={() => changeIsActive()} className="navbar-brand">
 

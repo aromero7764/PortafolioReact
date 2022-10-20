@@ -73,7 +73,7 @@ body {
    
    }
 
-   a:hover {
+.buttonA:hover {
     color: var(--white);
    }
    

@@ -12,7 +12,7 @@ const MainSection = () => {
   const [t] = useTranslation('global')
 
   return (
-    <div className='hero is-halfheight'>
+  
         <div className='hero-body is-align-items-start is-align-self-center' id="home">
             <section className="principal-section animate__animated animate__fadeInRight">
                 <h1 className="title">Full Stack Web <br/><span className="development">Developer</span></h1>
@@ -48,7 +48,7 @@ const MainSection = () => {
 
                 <div className="contac-button">
 
-                <Link className="contac-button__item rgb" to="contact" spy={true} smooth={true} offset={-40} duration={250}>
+                <Link className="contac-button__item rgb buttonA" to="contact" spy={true} smooth={true} offset={-40} duration={250}>
                         <img className="contact-mail_icon"
                         src={imgEmail} alt="img-email"/>{t('Contactame')}
 
@@ -57,7 +57,7 @@ const MainSection = () => {
                 </div>
             </section>
         </div>
-        </div>
+      
   )
 }
 
