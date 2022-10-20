@@ -1,0 +1,36 @@
+#button {
+    display: inline-block;
+    background-color: var(--lightviolet);
+    width: 39px;
+    height: 45px;
+    text-align: center;
+    border-radius: 41px;
+    position: fixed;
+    bottom: 30px;
+    right: 8px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    color: var(--white)
+  }
+  
+  #button:hover {
+    cursor: pointer;
+    background-color: var(--bgviolet);
+  }
+  #button:active {
+    background-color: #555;
+  }
+  #button.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+
+  
+
+  @media (min-width: 500px) {
+
+  }

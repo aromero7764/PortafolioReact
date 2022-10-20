@@ -7,7 +7,7 @@ const AppClima = () => {
 
   return (
         <div className="column is-4-desktop is-3-widescreen is-half-tablet">
-        <AnimationOnScroll animateIn="animate__fadeInUpBig">
+        <AnimationOnScroll animateIn="animate__zoomIn">
             <div className="card rgb">
                 <header className="card-header">
                     <p className="card-header-title">

@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next'
 import './Aboutme.css'
 import { AnimationOnScroll } from 'react-animation-on-scroll'
 
+
 const NewAboutMe = () => {
   const [t] = useTranslation('global')
 
@@ -16,8 +17,8 @@ const NewAboutMe = () => {
 
                 <div className="column">
                     {/*   <!-- Profile picture --> */}
-                    <AnimationOnScroll animateIn="animate__fadeInLeft">
-                    <div className="card">
+                    
+                    <div className="card animate__animated animate__fadeInLeft">
                         <div className="card-content">
                             <h3 className="title is-2">{t('AboutMe')}</h3>
                             <div className="container parrafo_skills">
@@ -25,18 +26,18 @@ const NewAboutMe = () => {
 
                                 </p>
                                 <p className=' parrafo_skills'> {t('TxtAboutMe2')} </p>
-
+                                
                             </div>
 
                         </div>
                     </div>
-                    </AnimationOnScroll>
+                  
                 </div>
 
                 <div className="column">
                     {/*    <!-- Skills --> */}
-                    <AnimationOnScroll animateIn="animate__fadeInRight">
-                    <div className="card skills-content cardSkills">
+                   
+                    <div className="card skills-content cardSkills animate__animated animate__fadeInRight" >
                         <div className="card-content">
                             <h3 className="title is-2 mb-0">Skills</h3>
                             <div className="content codecontent">
@@ -54,7 +55,7 @@ const NewAboutMe = () => {
                             </div>
                         </div>
                     </div>
-                    </AnimationOnScroll>
+                    
                 </div>
 
             </div>

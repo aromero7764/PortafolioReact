@@ -7,6 +7,7 @@ import 'bulma/css/bulma.min.css'
 import './assets/css/main.css'
 import 'animate.css'
 import './assets/css/izmir.css'
+import ScrollUp from './components/ScrollUp/ScrollUp'
 
 function App () {
   return (
@@ -30,6 +31,7 @@ function App () {
             <MainPortafolio />
             <Contactame />
           </div>
+          <ScrollUp />
         </div>
   )
 }

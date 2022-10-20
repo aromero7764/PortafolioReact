@@ -13,7 +13,7 @@ const MainSection = () => {
 
   return (
   
-        <div className='hero-body is-align-items-start is-align-self-center' id="home">
+        <div className='hero-body is-align-items-start is-align-self-center p-0' id="home">
             <section className="principal-section animate__animated animate__fadeInRight">
                 <h1 className="title">Full Stack Web <br/><span className="development">Developer</span></h1>
                 <h3 className="introduction">React - Svelte - JS - PHP - HTML5/CSS3</h3>
