@@ -20,7 +20,7 @@ const NewAboutMe = () => {
                     
                     <div className="card animate__animated animate__fadeInLeft">
                         <div className="card-content">
-                            <h3 className="title is-2">{t('AboutMe')}</h3>
+                            <h3 className="title is-3">{t('AboutMe')}</h3>
                             <div className="container parrafo_skills">
                                 <p className=' parrafo_skills'> {t('TxtAboutMe')}
 
@@ -39,7 +39,7 @@ const NewAboutMe = () => {
                    
                     <div className="card skills-content cardSkills animate__animated animate__fadeInRight" >
                         <div className="card-content">
-                            <h3 className="title is-2 mb-0">Skills</h3>
+                            <h3 className="title is-3 mb-0">Skills</h3>
                             <div className="content codecontent">
 
                             <pre className='p-0' style={{ whiteSpace: 'pre-wrap', background: 'var(--white)' }}>
