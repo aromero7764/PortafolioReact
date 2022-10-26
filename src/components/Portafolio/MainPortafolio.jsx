@@ -8,6 +8,7 @@ import RickAndMorty from './RickAndMorty/RickAndMorty'
 import PostItApp from './PostItApp/PostItApp'
 import AppClima from './AppClima/AppClima'
 import SunShineLandingPage from './SunShineLanding/SunShineLandingPage'
+import EcommerceSvelte from './EcommerceSvelte/EcommerceSvelte'
 
 const MainPortafolio = () => {
   const [t] = useTranslation('global')
@@ -19,7 +20,7 @@ const MainPortafolio = () => {
         <h2 className="section-title subtitle">{t('Portafolio')}</h2>
         <div className="container content-wrapper">
           <div className="columns is-multiline">
-
+            <EcommerceSvelte />
             <Pokedex />
             <SocialMediaDashboard />
             <AdminDashboard />

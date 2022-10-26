@@ -5,7 +5,7 @@
     "Portafolio": "Portafolio",
     "Contacto": "Contacto",
     "Contactame": "Contáctame",
-    "TxtAboutMe": "Hola! mi nombre es Alberto Romero, soy desarrollador web con experiencia HTML/CSS JavaScript, React, Node Js y Svelte, tengo experiencia en creacion de Backend y FrontEnd, implementacion de variedad de frameworks, librerias y consumo de API. Amante del cafe y los animales",
+    "TxtAboutMe": "Hola! mi nombre es Alberto Romero, soy desarrollador web con experiencia HTML/CSS JavaScript, Svelte, Node Js, React, PHP y MySql tengo experiencia en creacion de Backend y FrontEnd, implementacion de variedad de frameworks, librerias y consumo de API. Tambien amante de un buen cafe y los animales",
     "Pokedektext": "Realizado en React JS con Redux, consumo de API y Bulma CSS",
     "SocialMedia": "Landing Page de una Social Media Dashboard, realizado en Vanilla Js",
     "AdminDashBoard": "CRUD de usuarios en React, consumo de API",
@@ -23,7 +23,8 @@
     "nombremsj": "Escriba su nombre",
     "emailmsj": "Escriba su email",
     "TxtAboutMe2" : "Adicional a mi pasion por el desarrollo web, tengo experiencia profesional en procesos logisticos, operativos, administrativos y almacenes. Poseo una habilidad natural de entender como aplicar soluciones web a problemas empresariales.",
-    "txtModal": "Gracias por su correo le respondere a la brevedad"
+    "txtModal": "Gracias por su correo le respondere a la brevedad",
+    "ecommerceSvelteText" : "Hecho en Svelte, uso de JS, Axios, API, Stores, y Bulma CSS"
     
 
 }

@@ -6,7 +6,7 @@
     "Portafolio": "Portfolio",
     "Contacto": "Contact",
     "Contactame": "Contact me",
-    "TxtAboutMe": "Hi there! My name is Alberto, I'm a self-taught web developer with JavaScript, React and Svelte experience, Backend and FrontEnd creation, knowledge in implementing a variety of frameworks, libraries and API.",
+    "TxtAboutMe": "Hi there! My name is Alberto, I'm a self-taught web developer with HTML/CSS JavaScript, Svelte, Node Js, React, PHP, and MySql experience, Backend and FrontEnd creation, knowledge in implementing a variety of frameworks, libraries and API.",
     "Pokedektext": "Made in React JS with Redux, API PokeApi and Bulma CSS",
     "SocialMedia": "Landing Page of a Social Media Dashboard, made in Vanilla Js",
     "AdminDashBoard": "User CRUD, Made in React, API with axios",
@@ -24,6 +24,7 @@
     "nombremsj": "Write your name",
     "emailmsj": "Write your email",
     "TxtAboutMe2" : "Plus to my passion for web development, I have professional experience in logistics, administrative and warehouse processes. I have a natural ability to understand how to apply web solutions to business problems.",
-    "txtModal": "Thank you for your email, reply promptly"
+    "txtModal": "Thank you for your email, reply promptly",
+    "ecommerceSvelteText" : "E-commerce made in Svelte, JS, API consumption, use of stores, styles with Bulma CSS"
 
 }
