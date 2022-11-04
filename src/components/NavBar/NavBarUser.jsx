@@ -6,6 +6,7 @@ import enFlag from '../../assets/img/united-states.png'
 import esFlag from '../../assets/img/spain.png'
 import './NavBarUser.css'
 import { useState } from 'react'
+import TogleDarkMode from './TogleDarkMode'
 
 const NavBarUser = () => {
   const lenguaje = useSelector((state) => state.lenguajes)
@@ -17,14 +18,7 @@ const NavBarUser = () => {
     setIsActive(!isActive)
   }
 
-  const changeToogle = () => {
-    setCToggle(!toggle)
-    if (toggle) {
-      document.body.classList.remove('dark-mode')
-    } else {
-      document.body.classList.add('dark-mode')
-    }
-  }
+ 
 
   const changeLenguaje = (lenguajeSelect) => {
     i18n.changeLanguage(lenguajeSelect)
@@ -68,15 +62,10 @@ const NavBarUser = () => {
                                 <img src={enFlag} alt="EspFlag" />
                             </a>
                         </div>
-
+                    {/* <TogleDarkMode /> */}
                 </div>
             </div>
-        {/*     <article onClick={() => changeToogle()} className="darklight">
-            <h2 id="toggle-label" className="darlike__label">{(toggle) ? 'Dark' : 'Light'}</h2>
-              <div id="toggle" className="toggle">
-                <div id="toggle-circle" className={`toggle_circle ${(toggle) && 'toggle_circle-right'}`}></div>
-              </div>
-          </article> */}
+            
     </nav>
   )
 }
