@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import './Aboutme.css'
 import { AnimationOnScroll } from 'react-animation-on-scroll'
+import Carrousel from './Carrousel'
 
 
 const NewAboutMe = () => {
@@ -53,6 +54,7 @@ const NewAboutMe = () => {
                                     <span style={{ color: 'rgb(211, 61, 35)' }}>this
                                     </span>.<span>firstName</span> = <span>firstName</span>;{'\n'}{'    '}<span style={{ color: 'rgb(211, 61, 35)' }}>this</span>.<span>lastName</span> = <span>lastName</span>;{'\n'}{'    '}<span style={{ color: 'rgb(211, 61, 35)' }}>this</span>.<span>skills</span> = <span>skills</span>;{'\n'}{'  '}{'}'}{'\n'}{'}'}{'\n'}{'\n'}<span style={{ color: 'rgb(171, 75, 184)' }}>const</span> <span style={{ color: 'rgb(70, 146, 136)' }}>Alberto</span> = <span style={{ color: 'rgb(171, 75, 184)' }}>new</span> <span style={{ color: 'rgb(211, 61, 35)' }}>WebDeveloper </span>({'\n'}{'  '}<span style={{ color: 'rgb(117, 36, 47)' }}>"Alberto"</span>, {'\n'}{'  '}<span style={{ color: 'rgb(117, 36, 47)' }}>"Romero"</span>, {'\n'}{'  '}{'{'} {'\n'}{'      '}<span style={{ textDecorationLine: 'underline' }}>Front-End</span>: [<span style={{ color: 'var(--lightviolet)' }}>"HTML"</span>, <span style={{ color: 'var(--lightviolet)' }}>"CSS"</span>, <span style={{ color: 'var(--lightviolet)' }}>"JS"</span>, <span style={{ color: 'var(--lightviolet)' }}>"Svelte"</span>, <span style={{ color: 'var(--lightviolet)' }}>"React"</span>], {'\n'}{'      '}<span style={{ textDecorationLine: 'underline' }}>Back-End</span>: [<span style={{ color: 'var(--lightviolet)' }}>"NodeJs"</span>, <span style={{ color: 'var(--lightviolet)' }}>"PHP"</span>, <span style={{ color: 'var(--lightviolet)' }}>"Express"</span>, <span style={{ color: 'var(--lightviolet)'}}>"Jest"</span>]{'\n'}{'  '}{'}'},{'\n'}){'\n'}</code>{'\n'}</pre>
                             </div>
+                            <Carrousel />
                         </div>
                     </div>
                     
