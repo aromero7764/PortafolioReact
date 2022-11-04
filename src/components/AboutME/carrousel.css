@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat');
+ */
 /* * {
   margin: 0;
   padding: 0;
@@ -62,9 +62,9 @@ body {
   display: flex;
   animation: scrolling var(--marquee-animation-duration) linear infinite;
 }
-/* .marquee-content:hover {
+ .marquee-content:hover {
   animation-play-state: paused;
-} */
+} 
 @keyframes scrolling {
   0% { transform: translateX(0); }
   100% { transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements))); }

@@ -12,7 +12,7 @@ const Carrousel = () => {
     const root = document.documentElement;
     const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
     const marqueeContent = document.querySelector("ul.marquee-content");
-    console.log(marqueeContent.children.length)
+   
      root.style.setProperty("--marquee-elements", marqueeContent.children.length);
     
     for(let i=0; i<marqueeElementsDisplayed; i++) {
@@ -24,8 +24,8 @@ const Carrousel = () => {
 
     return (
         <div className='containercorousel rgb'>
-             <div class="marquee">
-    <ul class="marquee-content">
+             <div className="marquee">
+    <ul className="marquee-content">
       <li><AiFillGithub /></li>
       <li><AiFillHtml5 /></li>
       <li><FaCss3Alt /></li>
