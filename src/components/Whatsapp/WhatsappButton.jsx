@@ -14,7 +14,7 @@ const WhatsappButton = () => {
            chatMessage={`Hola! 🤝 ${"\n"}Comenzamos a trabajar??`}
            placeholder="Escribe un mensaje aquí"
            allowClickAway="true"
-           chatboxHeight={278}
+          
            
           
            
