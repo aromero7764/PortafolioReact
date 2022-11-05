@@ -38,15 +38,15 @@ const NavBarUser = () => {
             </div>
             <div className={`navbar-menu ${(isActive) && 'is-active'}`}>
                 <div className="navbar-end">
-                <Link onClick={() => changeIsActive()} className="navbar-item" to="home" spy={true} smooth={true} offset={-40} duration={250}>
+               {/*  <Link onClick={() => changeIsActive()} className="navbar-item" to="home" spy={true} smooth={true} offset={-40} duration={250}>
                     {t('Incio')}
-                </Link>
+                </Link> */}
 
-                <Link onClick={() => changeIsActive()} className="navbar-item" to="skills" spy={true} smooth={true} offset={-40} duration={250}>
+                <Link onClick={() => changeIsActive()} className="navbar-item" to="skills" spy={true} smooth={true} offset={10} duration={100}>
                     {t('MySkills')}
                     </Link>
 
-                    <Link onClick={() => changeIsActive()} className="navbar-item" to="portafolio" spy={true} smooth={true} offset={-40} duration={250}>
+                    <Link onClick={() => changeIsActive()} className="navbar-item" to="portafolio" spy={true} smooth={true} offset={-20} duration={1}>
                     {t('Portafolio')}
                     </Link>
 
@@ -62,8 +62,9 @@ const NavBarUser = () => {
                                 <img src={enFlag} alt="EspFlag" />
                             </a>
                         </div>
-                    {/* <TogleDarkMode /> */}
+                     
                 </div>
+               {/*  <TogleDarkMode />  */}
             </div>
             
     </nav>

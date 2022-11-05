@@ -7,8 +7,8 @@ const Pokedex = () => {
   const [t] = useTranslation('global')
 
   return (
-        <div className="column is-4-desktop is-3-widescreen is-half-tablet">
-            <AnimationOnScroll animateIn="animate__fadeInLeft">
+        <div className="column is-4-desktop is-4-widescreen is-half-tablet">
+            <AnimationOnScroll animateIn="animate__zoomIn" animateOut='animate__fadeOutDown'>
             <div className="card rgb">
                 <header className="card-header">
                     <p className="card-header-title">
@@ -20,24 +20,24 @@ const Pokedex = () => {
                     className='p-4 is-clickable'>
                     <figure className="c4-izmir c4-border-ccc-2 c4-image-zoom-out c4-gradient-top ">
 
-                        <img src={ecommerceSvelteImg} alt="ecoomerce" />
+                        <img className='bg_portafolio' src={ecommerceSvelteImg} alt="ecoomerce" />
                         <figcaption className='c4-layout-top-left'>
                             <div className="c4-reveal-left c4-delay-200">
-                                <p className='is-size-7'>{t('ecommerceSvelteText')}</p>
+                                <p className='text_portafolio'>{t('ecommerceSvelteText')}</p>
                             </div>
                            
-                            <div className='is-flex'>
+                            <div className='icon_container'>
                                 <span className="icon is-small">
-                                    <img src="https://bulma.io/assets/Bulma%20Icon.svg" alt="" />
+                                    <img className='icon_img' src="https://bulma.io/assets/Bulma%20Icon.svg" alt="" />
                                 </span>
                                 <span className="icon is-small mx-1">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg" alt="" />
+                                    <img className='icon_img' src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg" alt="" />
                                 </span>
                                 <span className="icon is-small mx-1">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="JsLogo" />
+                                    <img className='icon_img' src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="JsLogo" />
                                 </span>
                                 <span className="icon is-small mx-1">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Axios_%28computer_library%29_logo.svg" alt="axioslogo" />
+                                    <img className='icon_img' src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Axios_%28computer_library%29_logo.svg" alt="axioslogo" />
                                 </span>
                             </div>
                         </figcaption>

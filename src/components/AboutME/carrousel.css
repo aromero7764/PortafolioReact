@@ -29,14 +29,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: var(--marquee-width)
 }
 
 .marquee {
  
-  width: var(--marquee-width);
+  /* width: var(--marquee-width); */
   height: var(--marquee-height);
   background-color: var(--ligh);
-  color: rgb(139, 47, 0);
+  color: rgb(46, 46, 45);
   overflow: hidden;
   position: relative;
 }

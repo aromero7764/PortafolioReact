@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next'
 import { useForm, ValidationError } from '@formspree/react'
 import toast, { Toaster } from 'react-hot-toast'
 import './contactame.css'
+import { AnimationOnScroll } from 'react-animation-on-scroll'
 
 const Contactame = () => {
   const [state, handleSubmit] = useForm('xlevloey')
@@ -80,12 +81,14 @@ const Contactame = () => {
                 </div>
 
                 <div className="field is-grouped has-text-centered is-justify-content-center">
+                
                   <div className="control contac-button2">
                     <button type="submit" disabled={state.submitting} className="contac-button__item rgb buttonA"><span className="icon">
                         <i className="fas fa-envelope"></i>
                       </span>
                       <span>{t('send')}</span></button>
                   </div>
+                  
                 </div>
                 </form>
               </div>

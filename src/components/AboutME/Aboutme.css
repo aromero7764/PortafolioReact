@@ -9,13 +9,19 @@
 .skills{
     background-color:var(--bgviolet);
 
-}
+} 
 
-.cardSkills {
+/* .cardSkills {
 
     background-color:var(--white);
+    
 
-}
+} */
+
+/* .skill_columns {
+    box-shadow: 5px 24px 5px -11px rgba(0,0,0,0.1);
+
+} */
 
 
 .skillText{
@@ -31,3 +37,4 @@
     text-align: justify;
     padding: 9px;
 }
+

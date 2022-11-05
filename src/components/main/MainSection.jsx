@@ -1,5 +1,5 @@
 
-import fotoPersonal from '../../assets/img/nuevaFoto.png'
+import fotoPersonal from '../../assets/img/nuevaFoto.webp'
 import { useCallback } from "react";
 import imgLinkedin from '../../assets/img/cib_linkedin-in.svg'
 import imgGitHub from '../../assets/img/iconmonstr-github-1.svg'

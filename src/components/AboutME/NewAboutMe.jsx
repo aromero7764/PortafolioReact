@@ -14,7 +14,7 @@ const NewAboutMe = () => {
         <section id="skills" className="section skills" >
             {/* <!-- Title --> */}
 
-            <div className="columns has-same-height is-gapless">
+            <div className="columns has-same-height is-gapless skill_columns">
 
                 <div className="column">
                     {/*   <!-- Profile picture --> */}

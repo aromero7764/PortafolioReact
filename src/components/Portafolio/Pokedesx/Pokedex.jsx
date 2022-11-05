@@ -7,8 +7,8 @@ const Pokedex = () => {
   const [t] = useTranslation('global')
 
   return (
-        <div className="column is-4-desktop is-3-widescreen is-half-tablet">
-            <AnimationOnScroll animateIn="animate__fadeInLeft">
+        <div className="column is-4-desktop is-4-widescreen is-half-tablet">
+            <AnimationOnScroll animateIn="animate__zoomIn" animateOut='animate__fadeOutDown'>
             <div className="card rgb">
                 <header className="card-header">
                     <p className="card-header-title">
@@ -23,18 +23,18 @@ const Pokedex = () => {
                         <img src={PokedexImg} alt="PokedexImgane" />
                         <figcaption className='c4-layout-top-left'>
                             <div className="c4-reveal-left c4-delay-200">
-                                <p className='is-size-7'>{t('Pokedektext')}</p>
+                                <p className='text_portafolio'>{t('Pokedektext')}</p>
                             </div>
                            
-                            <div className='is-flex'>
+                            <div className='icon_container'>
                                 <span className="icon is-small">
-                                    <img src="https://bulma.io/assets/Bulma%20Icon.svg" alt="" />
+                                    <img className='icon_img' src="https://bulma.io/assets/Bulma%20Icon.svg" alt="" />
                                 </span>
                                 <span className="icon is-small mx-1">
-                                    <img src="https://cdn.cdnlogo.com/logos/r/85/react.svg" alt="" />
+                                    <img className='icon_img' src="https://cdn.cdnlogo.com/logos/r/85/react.svg" alt="" />
                                 </span>
                                 <span className="icon is-small mx-1">
-                                    <img src="https://cdn.cdnlogo.com/logos/r/69/redux.svg" alt="" />
+                                    <img className='icon_img' src="https://cdn.cdnlogo.com/logos/r/69/redux.svg" alt="" />
                                 </span>
                             </div>
                         </figcaption>

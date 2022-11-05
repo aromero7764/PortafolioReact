@@ -8,6 +8,7 @@ import './assets/css/main.css'
 import 'animate.css'
 import './assets/css/izmir.css'
 import ScrollUp from './components/ScrollUp/ScrollUp'
+import WhatsappButton from './components/Whatsapp/WhatsappButton'
 
 function App () {
   return (
@@ -32,6 +33,7 @@ function App () {
             <Contactame />
           </div>
           <ScrollUp />
+          <WhatsappButton />
         </div>
   )
 }
