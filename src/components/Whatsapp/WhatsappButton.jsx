@@ -11,7 +11,7 @@ const WhatsappButton = () => {
            phoneNumber="+584142360529"
            avatar={fotoPersonal}
            statusMessage="Normalmente responde en 15 min."
-           chatMessage={`Hola! 🤝 ${"\n"}Comenzamos a trabajar??  ${"\n"}También me puedes escribir al correo: aromero7764@gmail.com`}
+           chatMessage={`Hola! 🤝 ${"\n"}Comenzamos a trabajar??`}
            placeholder="Escribe un mensaje aquí"
            allowClickAway="true"
            chatboxHeight={335}
