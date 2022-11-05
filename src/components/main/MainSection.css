@@ -29,9 +29,9 @@
     display: flex;
     flex-wrap: wrap;
     position: absolute;
-    right: 13px;
-    top: -31px;
-    transform: rotate(319deg);
+    right: -59px;
+    top: -28px;
+    transform: rotate(323deg);
     z-index: -1;
     
 }

@@ -1,7 +1,4 @@
-.card {
-  margin-bottom: 3rem;
-  min-height: 22rem;
-}
+
 .content-wrapper {
   margin-top: 3rem;
 }
@@ -25,15 +22,9 @@
 }
 
 .text_portafolio {
-  font-size: 13px;
+  font-size: 9px;
 }
 
-.bg_portafolio {
-  min-width: 315px;
-  min-height: 214px;
-  max-width: 315px;
-  max-height: 214px;
-}
 
 .icon_container {
   display: flex;

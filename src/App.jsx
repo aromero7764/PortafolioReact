@@ -5,10 +5,10 @@ import MainPortafolio from './components/Portafolio/MainPortafolio'
 import Contactame from './components/Contactame/Contactame'
 import 'bulma/css/bulma.min.css'
 import './assets/css/main.css'
-import 'animate.css'
 import './assets/css/izmir.css'
 import ScrollUp from './components/ScrollUp/ScrollUp'
 import WhatsappButton from './components/Whatsapp/WhatsappButton'
+import 'animate.css'
 
 function App () {
   return (

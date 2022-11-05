@@ -652,6 +652,19 @@ body {
        .parrafo2 {
            font-size: 16px;
        }
+
+       .bg_portafolio {
+        min-width: 315px;
+        min-height: 214px;
+        max-width: 315px;
+        max-height: 214px;
+      }
+
+      .text_portafolio {
+        font-size: 13px;
+      }
+      
+      
    /* FIN DEL MEDIAQUERY */
    }
    
