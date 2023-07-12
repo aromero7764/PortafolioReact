@@ -8,9 +8,9 @@ const TogleDarkMode = () => {
   const changeToogle = () => {
     setCToggle(!toggle)
     if (toggle) {
-      document.body.classList.remove('dark-mode')
+      document.body.classList.remove('light-mode')
     } else {
-      document.body.classList.add('dark-mode')
+      document.body.classList.add('light-mode')
     }
   }
 
@@ -18,7 +18,7 @@ const TogleDarkMode = () => {
 
   return (
     <article onClick={() => changeToogle()} className="darklight">
-            <h2 id="toggle-label" className="darlike__label">{(toggle) ? 'Dark' : 'Light'}</h2>
+            <h2 id="toggle-label" className="darlike__label">{(toggle) ? 'Light' : 'Dark'}</h2>
               <div id="toggle" className="toggle">
                 <div id="toggle-circle" className={`toggle_circle ${(toggle) && 'toggle_circle-right'}`}></div>
               </div>
