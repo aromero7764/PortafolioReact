@@ -43,24 +43,27 @@ const NewAboutMe = () => {
                             <h3 className="title is-3 mb-0">Skills</h3>
                             <div className="content codecontent">
 
-                            <pre className='p-0' style={{ whiteSpace: 'pre-wrap', background: 'var(--white)' }}>
+                            <pre className='p-0' style={{ whiteSpace: 'pre-wrap', background: 'var(--white)', color: 'var(--darkgrey)' }}>
                                 <code>{'\n'}
-                                <span style={{ color: 'rgb(171, 75, 184)' }}>class</span>
-                                <span style={{ color: 'rgb(211, 61, 35)' }}> WebDeveloper</span> {'{'}{'\n'}{'  '}
-                                <span style={{ color: 'rgb(171, 75, 184)' }}>constructor </span>
+                                <span style={{ color: 'var(--skillColor1)' }}>class</span>
+                                <span style={{ color: 'var(--skillColor2)' }}> WebDeveloper</span> {'{'}{'\n'}{'  '}
+                                <span style={{ color: 'var(--skillColor1)' }}>constructor </span>
                                 (
                                     <span>firstName</span>, <span>lastName</span>, <span>skills</span>) {'{'}{'\n'}{'    '}
                                     
-                                    <span style={{ color: 'rgb(211, 61, 35)' }}>this
-                                    </span>.<span>firstName</span> = <span>firstName</span>;{'\n'}{'    '}<span style={{ color: 'rgb(211, 61, 35)' }}>this</span>.<span>lastName</span> = <span>lastName</span>;{'\n'}{'    '}<span style={{ color: 'rgb(211, 61, 35)' }}>this</span>.<span>skills</span> = <span>skills</span>;{'\n'}{'  '}{'}'}{'\n'}{'}'}{'\n'}{'\n'}<span style={{ color: 'rgb(171, 75, 184)' }}>const</span> <span style={{ color: 'rgb(70, 146, 136)' }}>Alberto</span> = <span style={{ color: 'rgb(171, 75, 184)' }}>new</span> <span style={{ color: 'rgb(211, 61, 35)' }}>WebDeveloper </span>({'\n'}{'  '}<span style={{ color: 'rgb(117, 36, 47)' }}>"Alberto"</span>, {'\n'}{'  '}<span style={{ color: 'rgb(117, 36, 47)' }}>"Romero"</span>, {'\n'}{'  '}{'{'} {'\n'}{'      '}<span style={{ textDecorationLine: 'underline' }}>Front-End</span>: [<span style={{ color: 'var(--lightviolet)' }}>"HTML"</span>, <span style={{ color: 'var(--lightviolet)' }}>"CSS"</span>, <span style={{ color: 'var(--lightviolet)' }}>"JS"</span>, <span style={{ color: 'var(--lightviolet)' }}>"Svelte"</span>, <span style={{ color: 'var(--lightviolet)' }}>"React"</span>], {'\n'}{'      '}<span style={{ textDecorationLine: 'underline' }}>Back-End</span>: [<span style={{ color: 'var(--lightviolet)' }}>"NodeJs"</span>, <span style={{ color: 'var(--lightviolet)' }}>"PHP"</span>, <span style={{ color: 'var(--lightviolet)' }}>"Express"</span>, <span style={{ color: 'var(--lightviolet)'}}>"Jest"</span>]{'\n'}{'  '}{'}'},{'\n'}){'\n'}</code>{'\n'}</pre>
+                                    <span style={{ color: 'var(--skillColor2)' }}>this
+                                    </span>.<span>firstName</span> = <span>firstName</span>;{'\n'}{'    '}<span style={{ color: 'var(--skillColor2)' }}>this</span>.<span>lastName</span> = <span>lastName</span>;{'\n'}{'    '}<span style={{ color: 'var(--skillColor2)' }}>this</span>.<span>skills</span> = <span>skills</span>;{'\n'}{'  '}{'}'}{'\n'}{'}'}{'\n'}{'\n'}<span style={{ color: 'var(--skillColor1)' }}>const</span> <span style={{ color: 'var(--skillColor3)' }}>Alberto</span> = <span style={{ color: 'var(--skillColor1)' }}>new</span> <span style={{ color: 'var(--skillColor2)' }}>WebDeveloper </span>({'\n'}{'  '}<span style={{ color: 'var(--skillColor4)' }}>"Alberto"</span>, {'\n'}{'  '}<span style={{ color: 'var(--skillColor4)' }}>"Romero"</span>, {'\n'}{'  '}{'{'} {'\n'}{'      '}<span style={{ textDecorationLine: 'underline' }}>"Front-End"</span>: [<span style={{ color: 'var(--lightviolet)' }}>"HTML"</span>, <span style={{ color: 'var(--lightviolet)' }}>"CSS"</span>, <span style={{ color: 'var(--lightviolet)' }}>"JS"</span>, <span style={{ color: 'var(--lightviolet)' }}>"Svelte"</span>, <span style={{ color: 'var(--lightviolet)' }}>"React"</span>], {'\n'}{'      '}<span style={{ textDecorationLine: 'underline' }}>"Back-End"</span>: [<span style={{ color: 'var(--lightviolet)' }}>"NodeJs"</span>, <span style={{ color: 'var(--lightviolet)' }}>"PHP"</span>, <span style={{ color: 'var(--lightviolet)' }}>"Express"</span>, <span style={{ color: 'var(--lightviolet)'}}>"Jest"</span>]{'\n'}{'  '}{'}'},{'\n'}){'\n'}</code>{'\n'}</pre>
+                                    
                             </div>
-                            <Carrousel />
+                           
                         </div>
+                    { <Carrousel /> } 
                     </div>
                     
                 </div>
 
             </div>
+            
         </section>
 
   )

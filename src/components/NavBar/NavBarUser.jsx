@@ -64,7 +64,7 @@ const NavBarUser = () => {
                         </div>
                      
                 </div>
-               {/*  <TogleDarkMode />  */}
+               {  <TogleDarkMode />  }
             </div>
             
     </nav>

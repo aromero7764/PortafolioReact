@@ -23,6 +23,7 @@ const Carrousel = () => {
  
 
     return (
+      <div className='carrousel'>
         <div className='containercorousel rgb'>
              <div className="marquee">
     <ul className="marquee-content">
@@ -42,6 +43,7 @@ const Carrousel = () => {
       <li><FaFigma /></li>
     </ul>
   </div>
+        </div>
         </div>
     );
 };

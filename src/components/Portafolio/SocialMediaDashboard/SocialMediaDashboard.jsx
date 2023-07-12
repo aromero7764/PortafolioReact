@@ -8,7 +8,7 @@ const SocialMediaDashboard = () => {
   return (
         <div className="column is-4-desktop is-4-widescreen is-half-tablet">
 
-        <AnimationOnScroll animateIn="animate__zoomIn" animateOut='animate__fadeOutDown'>
+        <AnimationOnScroll animateIn="animate__zoomIn" /* animateOut='animate__fadeOutDown' */>
         <div className="card rgb">
             <header className="card-header">
                 <p className="card-header-title">

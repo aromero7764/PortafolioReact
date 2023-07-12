@@ -2,6 +2,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
 
 :root {
+
+    /* Tipografía */
+    --mainfont: 'Montserrat', sans-serif;
+
+    --lightviolet: #a68cff;
+    --darkviolet: #8c38ff;
+    --lightpink: #1c1c1e;
+    --black: #f9f9f9;
+    --darkgrey: #c9c9c9;
+    --white: #222222;
+    --beige: #2b2b2d;
+    --ligh: #cfb5ffc0;
+    --bgviolet: #2f2f31;
+    --bgcardskill: #2b2b2d;
+    --bgcolor: "";
+    --bgcolor2: "";
+    --skillColor1: #905fba; 
+    --skillColor2: #cf3c1a; 
+    --skillColor3: #5ea6a0;
+    --skillColor4: #9c3e4b;
+
+
+  }
+
+.light-mode {
     /* Colores */
     --lightviolet: #8e7bef;
     --darkviolet: #5d3bef;
@@ -15,23 +40,10 @@
     --bgcardskill:  #ffffff;
     --bgcolor: "";
     --bgcolor2: "";
-
-    /* Tipografía */
-    --mainfont: 'Montserrat', sans-serif;
-
-  }
-
-.dark-mode {
-    --darkviolet: #a08bff;
-    --black: #fff9f9;
-    --darkgrey: #ebebeb;
-    --white: rgb(9, 48, 102);
-    --beige: #726962;
-    --ligh: #56545ac0;
-    --bgviolet: #3e2e55 ; 
-    --bgcardskill: #5b595e;
-    --bgcolor: linear-gradient(to top, #051937, #022868, #2b3298, #6132c4, #a11be9);
-    --bgcolor2: linear-gradient(to top, #625d60, #605a5f, #5d585f, #59565f, #54545f, #525369, #4e5373, #48537d, #505191, #624ba2, #7d3fac, #9d25af);
+    --skillColor1: #ab4bb8;
+    --skillColor2: #d33d23;
+    --skillColor3: #469288;
+    --skillColor4: #75242f;
 }
 
 
