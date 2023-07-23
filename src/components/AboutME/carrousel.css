@@ -16,8 +16,8 @@ body {
 } */
 
 :root {
-  --marquee-width: 100%; /* defined  */
-  --marquee-height: 30px;
+  --marquee-width: 100% !important; /* defined  */
+  --marquee-height: 30px !important;
   /* --marquee-elements: 12; */ /* defined with JavaScript */
   --marquee-elements-displayed: 5;
   --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
@@ -34,7 +34,7 @@ body {
 
 .marquee {
  
-  /* width: var(--marquee-width); */
+  width: var(--marquee-width) !important;
   height: var(--marquee-height);
   background-color: var(--ligh);
   color: rgb(46, 46, 45);

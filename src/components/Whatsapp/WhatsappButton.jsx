@@ -1,7 +1,7 @@
-import React from 'react';
+import './buttonwhatsapp.css'
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
 import fotoPersonal from '../../assets/img/nuevaFoto.png'
-import './buttonwhatsapp.css'
+
 
 
 const WhatsappButton = () => {
