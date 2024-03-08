@@ -164,7 +164,7 @@ const particlesLoaded = useCallback(async container => {
                     </div>
                     <div className="conteneder-icon">
                         <a className="nav-link"
-                        href="https://drive.google.com/file/d/1TN91qkXwL-RsgA-gOnX1iB3xSJLUk-9_/view?usp=sharing" target="_blank" rel="noreferrer">
+                        href={t('urlcv')} target="_blank" rel="noreferrer">
                             <img className="button-icon" src={imgCv} alt="enlace-cv"/></a>
                     </div>
                 </div>

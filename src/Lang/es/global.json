@@ -24,7 +24,6 @@
     "emailmsj": "Escriba su email",
     "TxtAboutMe2" : "Adicional a mi pasión por el desarrollo web, tengo experiencia profesional en procesos logísticos, operativos y administrativos. Poseo una habilidad natural de entender como aplicar soluciones web a sus desarrollos empresariales.",
     "txtModal": "Gracias por su correo le responderé a la brevedad",
-    "ecommerceSvelteText" : "E-commerce realizado en Svelte, incluye filtros de búsqueda, precio y categorías, uso de Axios, consumo de API, Stores y estilos con Bulma CSS"
-    
-
+    "ecommerceSvelteText" : "E-commerce realizado en Svelte, incluye filtros de búsqueda, precio y categorías, uso de Axios, consumo de API, Stores y estilos con Bulma CSS",
+    "urlcv": "https://drive.google.com/file/d/1JltWQLpNhpPmfzhDXJsJH26bHQnMcfLL/view?usp=sharing"
 }
