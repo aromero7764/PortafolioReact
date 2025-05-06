@@ -1,6 +1,5 @@
 import { useTranslation } from 'react-i18next'
 import './Aboutme.css'
-import { AnimationOnScroll } from 'react-animation-on-scroll'
 import Carrousel from './Carrousel'
 
 
@@ -19,7 +18,7 @@ const NewAboutMe = () => {
                 <div className="column">
                     {/*   <!-- Profile picture --> */}
                     
-                    <div className="card animate__animated animate__fadeInLeft">
+                    <div className="card animate__animated animate__fadeInLeft  ">
                         <div className="card-content">
                             <h3 className="title is-3">{t('AboutMe')}</h3>
                             <div className="container parrafo_skills">
